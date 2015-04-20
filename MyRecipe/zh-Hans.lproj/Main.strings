@@ -1,0 +1,204 @@
+
+/* Class = "UIBarButtonItem"; title = "分组"; ObjectID = "0Hp-wa-J9P"; */
+"0Hp-wa-J9P.title" = "分组";
+
+/* Class = "UIBarButtonItem"; title = "照片墙"; ObjectID = "0Lk-Zw-xnc"; */
+"0Lk-Zw-xnc.title" = "照片墙";
+
+/* Class = "UIBarButtonItem"; title = "取消"; ObjectID = "1mB-0c-Klq"; */
+"1mB-0c-Klq.title" = "取消";
+
+/* Class = "UINavigationItem"; title = "详细统计"; ObjectID = "2bc-IZ-I5K"; */
+"2bc-IZ-I5K.title" = "详细统计";
+
+/* Class = "UIButton"; normalTitle = "立即发送验证邮件"; ObjectID = "3oM-Xd-OE6"; */
+"3oM-Xd-OE6.normalTitle" = "立即发送验证邮件";
+
+/* Class = "UITabBarItem"; title = "草稿箱"; ObjectID = "3sW-29-uK5"; */
+"3sW-29-uK5.title" = "草稿箱";
+
+/* Class = "UIBarButtonItem"; title = "编辑"; ObjectID = "4jB-Pq-gC4"; */
+"4jB-Pq-gC4.title" = "编辑";
+
+/* Class = "UITabBarItem"; title = "草稿箱"; ObjectID = "5DB-m1-5tV"; */
+"5DB-m1-5tV.title" = "草稿箱";
+
+/* Class = "UILabel"; text = "用 户 名："; ObjectID = "6b3-tq-HEw"; */
+"6b3-tq-HEw.text" = "用 户 名：";
+
+/* Class = "UINavigationItem"; title = "登录"; ObjectID = "98l-5I-yJv"; */
+"98l-5I-yJv.title" = "登录";
+
+/* Class = "UITabBarItem"; title = "全部菜谱"; ObjectID = "9AL-K6-dzy"; */
+"9AL-K6-dzy.title" = "全部菜谱";
+
+/* Class = "UIBarButtonItem"; title = "取消"; ObjectID = "9xH-co-jWQ"; */
+"9xH-co-jWQ.title" = "取消";
+
+/* Class = "UITabBarItem"; title = "设置"; ObjectID = "Bdu-1X-aX8"; */
+"Bdu-1X-aX8.title" = "设置";
+
+/* Class = "UITextField"; placeholder = "请输入您的用户名"; ObjectID = "CFj-pb-YjE"; */
+"CFj-pb-YjE.placeholder" = "请输入您的用户名";
+
+/* Class = "UILabel"; text = "王品台塑牛排"; ObjectID = "CKP-dY-Wrm"; */
+"CKP-dY-Wrm.text" = "王品台塑牛排";
+
+/* Class = "UIBarButtonItem"; title = "编辑"; ObjectID = "DVh-lH-TN1"; */
+"DVh-lH-TN1.title" = "编辑";
+
+/* Class = "UIBarButtonItem"; title = "上传"; ObjectID = "F8s-EA-FsS"; */
+"F8s-EA-FsS.title" = "上传";
+
+/* Class = "UILabel"; text = "2014-2-14 周五 13:14"; ObjectID = "FrL-zH-PXB"; */
+"FrL-zH-PXB.text" = "2014-2-14 周五 13:14";
+
+/* Class = "UIBarButtonItem"; title = "添加"; ObjectID = "GVS-Vj-n1g"; */
+"GVS-Vj-n1g.title" = "添加";
+
+/* Class = "UIBarButtonItem"; title = "删除"; ObjectID = "Gl1-CU-qvg"; */
+"Gl1-CU-qvg.title" = "删除";
+
+/* Class = "UILabel"; text = "菜谱名称："; ObjectID = "JIo-pL-Oye"; */
+"JIo-pL-Oye.text" = "菜谱名称：";
+
+/* Class = "UITabBarItem"; title = "草稿箱"; ObjectID = "JsX-AS-Vw4"; */
+"JsX-AS-Vw4.title" = "草稿箱";
+
+/* Class = "UILabel"; text = "经度：37.0085"; ObjectID = "KSr-nT-pf3"; */
+"KSr-nT-pf3.text" = "经度：37.0085";
+
+/* Class = "UITabBarItem"; title = "设置"; ObjectID = "LAd-Bd-HQh"; */
+"LAd-Bd-HQh.title" = "设置";
+
+/* Class = "UIBarButtonItem"; title = "忘记密码"; ObjectID = "O8G-IF-iO5"; */
+"O8G-IF-iO5.title" = "忘记密码";
+
+/* Class = "UIBarButtonItem"; title = "保存"; ObjectID = "OXu-5H-Daa"; */
+"OXu-5H-Daa.title" = "保存";
+
+/* Class = "UIButton"; normalTitle = "注册"; ObjectID = "R0l-8S-2hv"; */
+"R0l-8S-2hv.normalTitle" = "注册";
+
+/* Class = "UILabel"; text = "纬度：-117.0085"; ObjectID = "R6h-i0-yso"; */
+"R6h-i0-yso.text" = "纬度：-117.0085";
+
+/* Class = "UIBarButtonItem"; title = "返回"; ObjectID = "RC5-UE-kBs"; */
+"RC5-UE-kBs.title" = "返回";
+
+/* Class = "UITextField"; placeholder = "请输入您的电子邮箱"; ObjectID = "RnV-wQ-3i4"; */
+"RnV-wQ-3i4.placeholder" = "请输入您的电子邮箱";
+
+/* Class = "UILabel"; text = "用 户 名："; ObjectID = "SUg-nC-vI0"; */
+"SUg-nC-vI0.text" = "用 户 名：";
+
+/* Class = "UILabel"; text = "2014-2-14 周五 13:14"; ObjectID = "T1i-qN-NaC"; */
+"T1i-qN-NaC.text" = "2014-2-14 周五 13:14";
+
+/* Class = "UINavigationItem"; title = "添加"; ObjectID = "Uh9-e8-htk"; */
+"Uh9-e8-htk.title" = "添加";
+
+/* Class = "UIButton"; normalTitle = "立即登录"; ObjectID = "WKe-IY-O3G"; */
+"WKe-IY-O3G.normalTitle" = "立即登录";
+
+/* Class = "UIBarButtonItem"; title = "添加图片"; ObjectID = "X1N-2T-T91"; */
+"X1N-2T-T91.title" = "添加图片";
+
+/* Class = "UITextField"; placeholder = "请输入您的用户名"; ObjectID = "X78-UU-yf3"; */
+"X78-UU-yf3.placeholder" = "请输入您的用户名";
+
+/* Class = "UILabel"; text = "2014-2-14 周五 13:14"; ObjectID = "XBm-sc-1Rt"; */
+"XBm-sc-1Rt.text" = "2014-2-14 周五 13:14";
+
+/* Class = "UINavigationItem"; title = "设置"; ObjectID = "XVg-fA-ppX"; */
+"XVg-fA-ppX.title" = "设置";
+
+/* Class = "UINavigationItem"; title = "全部菜谱"; ObjectID = "Zjb-YR-0dW"; */
+"Zjb-YR-0dW.title" = "全部菜谱";
+
+/* Class = "UINavigationItem"; title = "注册"; ObjectID = "Zk9-Bp-LhG"; */
+"Zk9-Bp-LhG.title" = "注册";
+
+/* Class = "UITabBarItem"; title = "我的菜谱"; ObjectID = "aZ9-x0-arC"; */
+"aZ9-x0-arC.title" = "我的菜谱";
+
+/* Class = "UINavigationItem"; title = "详细信息"; ObjectID = "awL-LW-nU3"; */
+"awL-LW-nU3.title" = "详细信息";
+
+/* Class = "UITabBarItem"; title = "我的菜谱"; ObjectID = "b7t-GG-pxA"; */
+"b7t-GG-pxA.title" = "我的菜谱";
+
+/* Class = "UITabBarItem"; title = "全部菜谱"; ObjectID = "bLb-iK-JZv"; */
+"bLb-iK-JZv.title" = "全部菜谱";
+
+/* Class = "UIBarButtonItem"; title = "刷新"; ObjectID = "cb5-tp-h7H"; */
+"cb5-tp-h7H.title" = "刷新";
+
+/* Class = "UIBarButtonItem"; title = "添加"; ObjectID = "ctY-Ju-t8G"; */
+"ctY-Ju-t8G.title" = "添加";
+
+/* Class = "UIBarButtonItem"; title = "分组"; ObjectID = "ddY-Mu-4sq"; */
+"ddY-Mu-4sq.title" = "分组";
+
+/* Class = "UILabel"; text = "2014-2-14 周五 13:14"; ObjectID = "f1a-tt-dEi"; */
+"f1a-tt-dEi.text" = "2014-2-14 周五 13:14";
+
+/* Class = "UITextField"; placeholder = "请输入您的密码"; ObjectID = "fFt-hN-1i9"; */
+"fFt-hN-1i9.placeholder" = "请输入您的密码";
+
+/* Class = "UILabel"; text = "小吃简餐"; ObjectID = "fG1-he-CC5"; */
+"fG1-he-CC5.text" = "小吃简餐";
+
+/* Class = "UILabel"; text = "密      码："; ObjectID = "gLm-vD-25x"; */
+"gLm-vD-25x.text" = "密      码：";
+
+/* Class = "UIButton"; normalTitle = "立即注册"; ObjectID = "hFE-AR-eKQ"; */
+"hFE-AR-eKQ.normalTitle" = "立即注册";
+
+/* Class = "UINavigationItem"; title = "我的菜谱"; ObjectID = "iqO-1J-oWb"; */
+"iqO-1J-oWb.title" = "我的菜谱";
+
+/* Class = "UINavigationItem"; title = "草稿箱"; ObjectID = "jEq-KU-e3k"; */
+"jEq-KU-e3k.title" = "草稿箱";
+
+/* Class = "UITextField"; placeholder = "请输入您的密码"; ObjectID = "jWW-KQ-IoZ"; */
+"jWW-KQ-IoZ.placeholder" = "请输入您的密码";
+
+/* Class = "UIBarButtonItem"; title = "编辑"; ObjectID = "kG1-FH-Poq"; */
+"kG1-FH-Poq.title" = "编辑";
+
+/* Class = "UILabel"; text = "菜谱名称："; ObjectID = "l67-Ff-RpD"; */
+"l67-Ff-RpD.text" = "菜谱名称：";
+
+/* Class = "UILabel"; text = "密      码："; ObjectID = "lim-z3-dsm"; */
+"lim-z3-dsm.text" = "密      码：";
+
+/* Class = "UILabel"; text = "分类管理"; ObjectID = "mqh-gN-E8M"; */
+"mqh-gN-E8M.text" = "分类管理";
+
+/* Class = "UILabel"; text = "王品台塑牛排"; ObjectID = "p34-ND-ZXS"; */
+"p34-ND-ZXS.text" = "王品台塑牛排";
+
+/* Class = "UIBarButtonItem"; title = "刷新"; ObjectID = "rgT-eA-eGX"; */
+"rgT-eA-eGX.title" = "刷新";
+
+/* Class = "UILabel"; text = "王品台塑牛排"; ObjectID = "uhy-u8-lei"; */
+"uhy-u8-lei.text" = "王品台塑牛排";
+
+/* Class = "UILabel"; text = "电子邮箱："; ObjectID = "vaA-JP-Je8"; */
+"vaA-JP-Je8.text" = "电子邮箱：";
+
+/* Class = "UIBarButtonItem"; title = "取消"; ObjectID = "wUh-uE-lfg"; */
+"wUh-uE-lfg.title" = "取消";
+
+/* Class = "UILabel"; text = "王品台塑牛排"; ObjectID = "wUs-5t-cvZ"; */
+"wUs-5t-cvZ.text" = "王品台塑牛排";
+
+/* Class = "UILabel"; text = "请在系统提示“扫街乐”要使用您当前的位置时点击“好”！如果仍然不能定位，请您检查是否已经打开设置-隐私-定位服务-扫街乐后面的开关。"; ObjectID = "yiw-d3-vkE"; */
+"yiw-d3-vkE.text" = "请在系统提示“扫街乐”要使用您当前的位置时点击“好”！如果仍然不能定位，请您检查是否已经打开设置-隐私-定位服务-扫街乐后面的开关。";
+
+/* Class = "UILabel"; text = "王品台塑牛排"; ObjectID = "yxa-le-hUw"; */
+"yxa-le-hUw.text" = "王品台塑牛排";
+
+/* Class = "UINavigationItem"; title = "分类管理"; ObjectID = "z67-0N-MT1"; */
+"z67-0N-MT1.title" = "分类管理";
