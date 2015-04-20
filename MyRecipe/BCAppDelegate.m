@@ -24,7 +24,6 @@
 	} else {
         [config performSelectorOnMainThread:@selector(initDataBase) withObject:nil waitUntilDone:YES];
     }
-	
     return YES;
 }
 
