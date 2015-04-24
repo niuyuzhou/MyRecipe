@@ -1,5 +1,5 @@
 //
-//  DPDengLuController.h
+//  DengLuController.h
 //  BestCanteen
 //
 //  Created by niuyuzhou on 14-2-15.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DPDengLuController : UIViewController
+@interface DengLuController : UIViewController
 
 @property (nonatomic, assign) BOOL isLogin;
 

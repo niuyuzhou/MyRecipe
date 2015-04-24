@@ -1,14 +1,14 @@
 	//
-	//  DPWoDeShangHuController.m
+	//  WoDeShangHuController.m
 	//  BestCanteen
 	//
 	//  Created by niuyuzhou on 14-2-15.
 	//  Copyright (c) 2014年 foodie. All rights reserved.
 	//
 
-#import "DPWoDeShangHuController.h"
+#import "WoDeShangHuController.h"
 
-@implementation DPWoDeShangHuController
+@implementation WoDeShangHuController
 
 - (void)viewDidLoad
 {
@@ -17,7 +17,7 @@
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(initDataSource) name:DPLoginStatusChangedNotification object:nil];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(initDataSource) name:DPLocalObjectUploadedNotification object:nil];
 	
-	self.myRecipes = [BCConfig sharedConfigInstance].myRecipes;
+	self.myRecipes = [Config sharedConfigInstance].myRecipes;
 	
 	if (!self.myRecipes) {
 		[self initDataSource];
@@ -29,8 +29,8 @@
 	AVUser * currentUser = [AVUser currentUser];
 	if (currentUser) {
 		[SVProgressHUD showWithStatus:DPFindMyShangHuOnServerWaitingSuggestion];
-		[[BCConfig sharedConfigInstance] initMyShangHusWithCompletionBlock:^{
-			self.myRecipes = [BCConfig sharedConfigInstance].myRecipes;
+		[[Config sharedConfigInstance] initMyShangHusWithCompletionBlock:^{
+			self.myRecipes = [Config sharedConfigInstance].myRecipes;
 			[self.tableView reloadData];
 			[SVProgressHUD dismiss];
         } andErrorBlock:^{
@@ -89,7 +89,7 @@
 		//AVObject *shangHuOnServer = self.myShangHus[indexPath.row];
         AVObject *myRecipeOnServer = self.myRecipes[indexPath.row];
 		
-        DPXiangXiXinXiController *xiangXiXinXiController = (DPXiangXiXinXiController *)[segue destinationViewController];
+        XiangXiXinXiController *xiangXiXinXiController = (XiangXiXinXiController *)[segue destinationViewController];
 		xiangXiXinXiController.myRecipeOnServer = myRecipeOnServer;
 		xiangXiXinXiController.viewMode = ViewModeServerEdit;
 		

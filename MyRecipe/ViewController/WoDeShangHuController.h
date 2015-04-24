@@ -1,5 +1,5 @@
 //
-//  DPWoDeShangHuController.h
+//  WoDeShangHuController.h
 //  BestCanteen
 //
 //  Created by niuyuzhou on 14-2-15.
@@ -7,9 +7,9 @@
 //
 
 #import "CaoGaoXiangCell.h"
-#import "DPXiangXiXinXiController.h"
+#import "XiangXiXinXiController.h"
 
-@interface DPWoDeShangHuController : UIViewController <
+@interface WoDeShangHuController : UIViewController <
 	UITableViewDataSource,
 	UITableViewDelegate
 >

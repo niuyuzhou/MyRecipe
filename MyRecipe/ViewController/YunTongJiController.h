@@ -1,5 +1,5 @@
 //
-//  DPWoDeShangHuController.h
+//  WoDeShangHuController.h
 //  BestCanteen
 //
 //  Created by niuyuzhou on 14-2-15.
@@ -7,7 +7,7 @@
 //
 
 #import "CaoGaoXiangCell.h"
-#import "DPXiangXiTongJiController.h"
+#import "XiangXiTongJiController.h"
 
 typedef NS_ENUM(NSUInteger, AnalyzeMode) {
 	AnalyzeModeUser = (1UL << 1),
@@ -16,7 +16,7 @@ typedef NS_ENUM(NSUInteger, AnalyzeMode) {
     AnalyzeModeArea = (1UL << 4),
 };
 
-@interface DPYunTongJiController : UIViewController <
+@interface YunTongJiController : UIViewController <
 	UITableViewDataSource,
 	UITableViewDelegate,
 	UIActionSheetDelegate

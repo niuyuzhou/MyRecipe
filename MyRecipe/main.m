@@ -8,13 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-#import "BCAppDelegate.h"
+#import "AppDelegate.h"
 
 int main(int argc, char * argv[])
 {
 	@autoreleasepool {
         @try {
-            UIApplicationMain(argc, argv, nil, NSStringFromClass([BCAppDelegate class]));
+            UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
         }
         @catch (NSException *exception) {
             NSLog(@"%s\n%@", __FUNCTION__, exception);

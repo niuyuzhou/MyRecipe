@@ -1,14 +1,14 @@
 	//
-	//  DPWoDeShangHuController.m
+	//  WoDeShangHuController.m
 	//  BestCanteen
 	//
 	//  Created by niuyuzhou on 14-2-15.
 	//  Copyright (c) 2014年 foodie. All rights reserved.
 	//
 
-#import "DPYunTongJiController.h"
+#import "YunTongJiController.h"
 
-@implementation DPYunTongJiController
+@implementation YunTongJiController
 
 - (void)viewDidLoad
 {
@@ -16,12 +16,12 @@
 
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(initDataSourceWithCurrentMode) name:DPLoginStatusChangedNotification object:nil];
 	
-	self.titleArray = [BCConfig sharedConfigInstance].analyzeMode;
+	self.titleArray = [Config sharedConfigInstance].analyzeMode;
 	self.navigationItem.title = self.titleArray[0];
 	self.analyzeMode = AnalyzeModeUser;
 	
-	self.allUsers = [BCConfig sharedConfigInstance].allUsers;
-	self.allUserFeedsCount = [BCConfig sharedConfigInstance].allUserFeedsCount;
+	self.allUsers = [Config sharedConfigInstance].allUsers;
+	self.allUserFeedsCount = [Config sharedConfigInstance].allUserFeedsCount;
 	
 	if (!self.allUsers || !self.allUserFeedsCount) {
 		[self initUserModeDataSource];
@@ -57,10 +57,10 @@
 	AVUser * currentUser = [AVUser currentUser];
 	if (currentUser) {
 		[SVProgressHUD showWithStatus:DPFindShangHuOnServerWaitingSuggestion];
-        [[BCConfig sharedConfigInstance] countAllAreaFeedsWithCompletionBlock:^{
+        [[Config sharedConfigInstance] countAllAreaFeedsWithCompletionBlock:^{
             
-            self.defaultArea = [BCConfig sharedConfigInstance].defaultArea;
-            self.allAreaFeedsCount = [BCConfig sharedConfigInstance].allAreaFeedsCount;
+            self.defaultArea = [Config sharedConfigInstance].defaultArea;
+            self.allAreaFeedsCount = [Config sharedConfigInstance].allAreaFeedsCount;
             [self.tableView reloadData];
             [SVProgressHUD dismiss];
             
@@ -79,11 +79,11 @@
 	AVUser * currentUser = [AVUser currentUser];
 	if (currentUser) {
 		[SVProgressHUD showWithStatus:DPFindShangHuOnServerWaitingSuggestion];
-		[[BCConfig sharedConfigInstance] initAllUsersOnServerWithCompletionBlock:^{
-			[[BCConfig sharedConfigInstance] countAllUserFeedsWithCompletionBlock:^{
+		[[Config sharedConfigInstance] initAllUsersOnServerWithCompletionBlock:^{
+			[[Config sharedConfigInstance] countAllUserFeedsWithCompletionBlock:^{
 				
-				self.allUsers = [BCConfig sharedConfigInstance].allUsers;
-				self.allUserFeedsCount = [BCConfig sharedConfigInstance].allUserFeedsCount;
+				self.allUsers = [Config sharedConfigInstance].allUsers;
+				self.allUserFeedsCount = [Config sharedConfigInstance].allUserFeedsCount;
 				[self.tableView reloadData];
 				[SVProgressHUD dismiss];
 				
@@ -107,10 +107,10 @@
 	AVUser * currentUser = [AVUser currentUser];
 	if (currentUser) {
 		[SVProgressHUD showWithStatus:DPFindShangHuOnServerWaitingSuggestion];
-			[[BCConfig sharedConfigInstance] countAllTypeFeedsWithCompletionBlock:^{
+			[[Config sharedConfigInstance] countAllTypeFeedsWithCompletionBlock:^{
 				
-				self.defaultType = [BCConfig sharedConfigInstance].defaultType;
-				self.allTypeFeedsCount = [BCConfig sharedConfigInstance].allTypeFeedsCount;
+				self.defaultType = [Config sharedConfigInstance].defaultType;
+				self.allTypeFeedsCount = [Config sharedConfigInstance].allTypeFeedsCount;
 				[self.tableView reloadData];
 				[SVProgressHUD dismiss];
 				
@@ -129,10 +129,10 @@
 	AVUser * currentUser = [AVUser currentUser];
 	if (currentUser) {
 		[SVProgressHUD showWithStatus:DPFindShangHuOnServerWaitingSuggestion];
-			[[BCConfig sharedConfigInstance] countAllTagFeedsWithCompletionBlock:^{
+			[[Config sharedConfigInstance] countAllTagFeedsWithCompletionBlock:^{
 				
-				self.defaultTag = [BCConfig sharedConfigInstance].defaultTag;
-				self.allTagFeedsCount = [BCConfig sharedConfigInstance].allTagFeedsCount;
+				self.defaultTag = [Config sharedConfigInstance].defaultTag;
+				self.allTagFeedsCount = [Config sharedConfigInstance].allTagFeedsCount;
 				[self.tableView reloadData];
 				[SVProgressHUD dismiss];
 				
@@ -295,8 +295,8 @@
 	}
 	
 	if (queryKey && queryValue) {
-		[[BCConfig sharedConfigInstance] initFeedsOfQueryKey:queryKey andQueryValue:queryValue WithCompletionBlock:^{
-			self.selectedQueryResult = [[BCConfig sharedConfigInstance].allQueryResult objectForKey:queryValue];
+		[[Config sharedConfigInstance] initFeedsOfQueryKey:queryKey andQueryValue:queryValue WithCompletionBlock:^{
+			self.selectedQueryResult = [[Config sharedConfigInstance].allQueryResult objectForKey:queryValue];
 			self.selectedQueryKey = queryValue;
 			[SVProgressHUD dismiss];
 			[self performSegueWithIdentifier:@"showSelectedAnalysis" sender:self];

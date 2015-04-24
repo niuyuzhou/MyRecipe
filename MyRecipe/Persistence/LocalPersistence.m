@@ -1,15 +1,15 @@
 
-#import "DPLocalPersistence.h"
+#import "LocalPersistence.h"
 
-@implementation DPLocalPersistence
+@implementation LocalPersistence
 
-+ (DPLocalPersistence *)sharedLocalPersistenceInstance
++ (LocalPersistence *)sharedLocalPersistenceInstance
 {
     static dispatch_once_t  onceToken;
-    static DPLocalPersistence * sharedLocalPersistenceInstance;
+    static LocalPersistence * sharedLocalPersistenceInstance;
 	
     dispatch_once(&onceToken, ^{
-        sharedLocalPersistenceInstance = [[DPLocalPersistence alloc] init];
+        sharedLocalPersistenceInstance = [[LocalPersistence alloc] init];
     });
     return sharedLocalPersistenceInstance;
 }

@@ -1,12 +1,12 @@
 	//
-	//  BCConfig.m
+	//  Config.m
 	//  BestCanteen
 	//
 	//  Created by niuyuzhou on 14-2-20.
 	//  Copyright (c) 2014年 foodie. All rights reserved.
 	//
 
-#import "BCConfig.h"
+#import "Config.h"
 
 NSString *const BCApplicationId = @"ry1w41u8mqrk05kimkme98gpvdw2isjhi8g13avznrbzodch";
 NSString *const BCClientKey = @"1hedsflkcdfj928js35nkyz21a937pw49h2hbj61a25bj4cc";
@@ -43,15 +43,15 @@ NSString *const DPServerTableMyRecipe = @"MyRecipe";
 NSString *const DPServerTableType = @"Type";
 NSString *const DPServerTableTag = @"Tag";
 
-@implementation BCConfig
+@implementation Config
 
-+ (BCConfig *)sharedConfigInstance
++ (Config *)sharedConfigInstance
 {
     static dispatch_once_t  onceToken;
-    static BCConfig * sharedConfigInstance;
+    static Config * sharedConfigInstance;
 	
     dispatch_once(&onceToken, ^{
-        sharedConfigInstance = [[BCConfig alloc] init];
+        sharedConfigInstance = [[Config alloc] init];
     });
     return sharedConfigInstance;
 }

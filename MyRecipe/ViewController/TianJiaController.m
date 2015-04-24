@@ -1,18 +1,18 @@
 //
-//  DPTianJiaController.m
+//  TianJiaController.m
 //  BestCanteen
 //
 //  Created by niuyuzhou on 14-2-15.
 //  Copyright (c) 2014年 foodie. All rights reserved.
 //
 
-#import "DPTianJiaController.h"
+#import "TianJiaController.h"
 
-@interface DPTianJiaController ()
+@interface TianJiaController ()
 
 @end
 
-@implementation DPTianJiaController
+@implementation TianJiaController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,9 +27,9 @@
 {
     [super viewDidLoad];
     
-    self.generalAddField = [BCConfig sharedConfigInstance].generalAddField;
-    self.optionalAddField = [BCConfig sharedConfigInstance].optionalAddField;
-    self.addField = [BCConfig sharedConfigInstance].addField;
+    self.generalAddField = [Config sharedConfigInstance].generalAddField;
+    self.optionalAddField = [Config sharedConfigInstance].optionalAddField;
+    self.addField = [Config sharedConfigInstance].addField;
     
     [self.typePickerController setDataSource:DataSourceType];
     [self.tagPickerController setDataSource:DataSourceTag];

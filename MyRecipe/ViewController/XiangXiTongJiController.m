@@ -6,7 +6,7 @@
 //  Copyright (c) 2014年 foodie. All rights reserved.
 //
 
-#import "DPXiangXiTongJiController.h"
+#import "XiangXiTongJiController.h"
 
 @implementation DPXiangXiTongJiController
 
@@ -55,7 +55,7 @@
 		
 		AVObject *myRecipeOnServer = self.selectedQueryResult[indexPath.row];
 		
-        DPXiangXiXinXiController *xiangXiXinXiController = (DPXiangXiXinXiController *)[segue destinationViewController];
+        XiangXiXinXiController *xiangXiXinXiController = (XiangXiXinXiController *)[segue destinationViewController];
 		xiangXiXinXiController.myRecipeOnServer = myRecipeOnServer;
 		xiangXiXinXiController.viewMode = ViewModeServerNoEdit;
     }

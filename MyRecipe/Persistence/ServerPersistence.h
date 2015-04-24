@@ -8,9 +8,9 @@
 
 #import "MyRecipe.h"
 
-@interface DPServerPersistence : NSObject
+@interface ServerPersistence : NSObject
 
-+ (DPServerPersistence *)sharedServerPersistenceInstance;
++ (ServerPersistence *)sharedServerPersistenceInstance;
 
 - (void)deleteObject:(AVObject *)object withCompletionBlock:(CompletionBlock)completionBlock andErrorBlock:(ErrorBlock)errorBlock;
 //- (void)uploadShangHuToServer:(ShangHu *)shangHu withCompletionBlock:(CompletionBlock)completionBlock andErrorBlock:(ErrorBlock)errorBlock;

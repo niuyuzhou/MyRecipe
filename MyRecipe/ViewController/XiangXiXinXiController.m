@@ -1,14 +1,14 @@
 	//
-	//  DPXiangXiXinXiController.m
+	//  XiangXiXinXiController.m
 	//  BestCanteen
 	//
 	//  Created by niuyuzhou on 14-2-16.
 	//  Copyright (c) 2014年 foodie. All rights reserved.
 	//
 
-#import "DPXiangXiXinXiController.h"
+#import "XiangXiXinXiController.h"
 
-@implementation DPXiangXiXinXiController
+@implementation XiangXiXinXiController
 
 - (void)viewDidLoad
 {
@@ -46,9 +46,9 @@
 	self.isNeedUpdateImages = YES;
 	self.photos = [NSMutableArray array];
 	self.thumbs = [NSMutableArray array];
-	self.generalAddField = [BCConfig sharedConfigInstance].generalAddField;
-    self.optionalAddField = [BCConfig sharedConfigInstance].optionalAddField;
-    self.addField = [BCConfig sharedConfigInstance].addField;
+	self.generalAddField = [Config sharedConfigInstance].generalAddField;
+    self.optionalAddField = [Config sharedConfigInstance].optionalAddField;
+    self.addField = [Config sharedConfigInstance].addField;
 	
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(uploadDraftToServer:) name:DPLoginStatusChangedNotification object:nil];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateImageData) name:DPServerObjectUpdatedNotification object:nil];
@@ -98,11 +98,11 @@
     NSInteger sureToDeleteButtonIndex = [alertView firstOtherButtonIndex];
     if (sureToDeleteButtonIndex == buttonIndex) {
 		if (self.viewMode == ViewModeLocal) {
-			[[DPLocalPersistence sharedLocalPersistenceInstance] deleteObject:self.myRecipe withCompletionBlock:^{
+			[[LocalPersistence sharedLocalPersistenceInstance] deleteObject:self.myRecipe withCompletionBlock:^{
 				[self.navigationController popViewControllerAnimated:YES];
 			} andErrorBlock:nil];
 		} else {
-			[[DPServerPersistence sharedServerPersistenceInstance] deleteObject:self.myRecipeOnServer withCompletionBlock:^{
+			[[ServerPersistence sharedServerPersistenceInstance] deleteObject:self.myRecipeOnServer withCompletionBlock:^{
 				[self.navigationController popViewControllerAnimated:YES];
 			} andErrorBlock:nil];
 		}
@@ -287,8 +287,8 @@
 	AVUser * currentUser = [AVUser currentUser];
 	
 	if (currentUser != nil) {
-		[[DPServerPersistence sharedServerPersistenceInstance] uploadMyRecipeToServer:self.myRecipe withCompletionBlock:^{
-			[[DPLocalPersistence sharedLocalPersistenceInstance] deleteObject:self.myRecipe withCompletionBlock:^{
+		[[ServerPersistence sharedServerPersistenceInstance] uploadMyRecipeToServer:self.myRecipe withCompletionBlock:^{
+			[[LocalPersistence sharedLocalPersistenceInstance] deleteObject:self.myRecipe withCompletionBlock:^{
 				[[NSNotificationCenter defaultCenter] postNotificationName:DPLocalObjectUploadedNotification object:nil];
 				[SVProgressHUD showSuccessWithStatus:DPUpToServerSuccessSuggestion];
 				[self.navigationController popViewControllerAnimated:YES];
@@ -310,7 +310,7 @@
 	}
 }
 
-- (void)tianJiaController:(DPTianJiaController *)tianJiaController didEditObject:(id)object
+- (void)tianJiaController:(TianJiaController *)tianJiaController didEditObject:(id)object
 {
 	if (self.viewMode == ViewModeLocal) {
         self.myRecipe = (MyRecipe *)object;
@@ -322,7 +322,7 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue identifier] isEqualToString:@"EditLocalInfo"]) {
-        DPTianJiaController *tianJiaController = (DPTianJiaController *)[segue destinationViewController];
+        TianJiaController *tianJiaController = (TianJiaController *)[segue destinationViewController];
         tianJiaController.isEditMode = YES;
 		tianJiaController.isLocal = YES;
         //tianJiaController.shangHu = self.shangHu;
@@ -330,7 +330,7 @@
 		tianJiaController.delegate = self;
 		
     } else if ([[segue identifier] isEqualToString:@"EditServerInfo"]) {
-		DPTianJiaController *tianJiaController = (DPTianJiaController *)[segue destinationViewController];
+		TianJiaController *tianJiaController = (TianJiaController *)[segue destinationViewController];
         tianJiaController.isEditMode = YES;
 		tianJiaController.isLocal = NO;
         tianJiaController.shangHuOnServer = self.myRecipeOnServer;

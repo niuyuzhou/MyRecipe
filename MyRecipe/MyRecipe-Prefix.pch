@@ -16,7 +16,7 @@
     #import <AVOSCloud/AVOSCloud.h>
     #import "CoreData+MagicalRecord.h"
 	#import "SVProgressHUD.h"
-	#import "BCConfig.h"
-	#import "DPLocalPersistence.h"
-	#import "DPServerPersistence.h"
+	#import "Config.h"
+	#import "LocalPersistence.h"
+	#import "ServerPersistence.h"
 #endif

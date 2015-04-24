@@ -1,14 +1,14 @@
 //
-//  DPDengLuController.m
+//  DengLuController.m
 //  BestCanteen
 //
 //  Created by niuyuzhou on 14-2-15.
 //  Copyright (c) 2014年 foodie. All rights reserved.
 //
 
-#import "DPDengLuController.h"
+#import "DengLuController.h"
 
-@implementation DPDengLuController
+@implementation DengLuController
 
 - (void)viewDidLoad
 {

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8YX-ce-x5E">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <scenes>
@@ -31,7 +32,7 @@
         <!--Deng Lu Controller - 登陆-->
         <scene sceneID="3FV-z3-pYx">
             <objects>
-                <viewController storyboardIdentifier="DPDengLuController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="U3n-BB-Bej" userLabel="Deng Lu Controller - 登陆" customClass="DPDengLuController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DengLuController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="U3n-BB-Bej" userLabel="Deng Lu Controller - 登陆" customClass="DengLuController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ggt-oy-j9a"/>
                         <viewControllerLayoutGuide type="bottom" id="4Lf-dB-ecN"/>
@@ -360,7 +361,7 @@
         <!--She Zhi Controller - Setting-->
         <scene sceneID="k7f-2s-q0a">
             <objects>
-                <viewController storyboardIdentifier="DPSheZhiController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nb3-SA-lJL" userLabel="She Zhi Controller - Setting" customClass="DPSheZhiController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SheZhiController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nb3-SA-lJL" userLabel="She Zhi Controller - Setting" customClass="SheZhiController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xyH-Qk-lCk"/>
                         <viewControllerLayoutGuide type="bottom" id="2EK-hG-MR0"/>
@@ -467,7 +468,7 @@
         <!--添加-->
         <scene sceneID="WRN-fG-nDL">
             <objects>
-                <tableViewController hidesBottomBarWhenPushed="YES" id="qeq-ct-2oV" customClass="DPTianJiaController" sceneMemberID="viewController">
+                <tableViewController hidesBottomBarWhenPushed="YES" id="qeq-ct-2oV" customClass="TianJiaController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="sd4-iO-qJR">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -533,8 +534,8 @@
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g5A-ek-fLQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <customObject id="qYc-D9-Zrx" customClass="DPPickerController"/>
-                <customObject id="9C7-HT-DL4" customClass="DPLocationInputController">
+                <customObject id="qYc-D9-Zrx" customClass="PickerController"/>
+                <customObject id="9C7-HT-DL4" customClass="LocationInputController">
                     <connections>
                         <outlet property="currentLocationActivityIndicatorView" destination="rRW-qC-WDa" id="zfy-zQ-Htv"/>
                         <outlet property="locatingButton" destination="Nla-oy-mzf" id="mTJ-ax-t77"/>
@@ -543,8 +544,8 @@
                         <outlet property="view" destination="PfQ-sY-a8O" id="D2y-B1-Rnq"/>
                     </connections>
                 </customObject>
-                <customObject id="Hgl-dd-d2d" customClass="DPPickerController"/>
-                <customObject id="AB4-3a-iFY" customClass="DPPickerController"/>
+                <customObject id="Hgl-dd-d2d" customClass="PickerController"/>
+                <customObject id="AB4-3a-iFY" customClass="PickerController"/>
                 <pickerView contentMode="scaleToFill" id="UgT-Ia-dS5" colorLabel="IBBuiltInLabel-Gray">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
@@ -638,7 +639,7 @@
         <!--我的菜谱-->
         <scene sceneID="uTH-Lk-vZz">
             <objects>
-                <viewController storyboardIdentifier="DPWoDeShangHuController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="VEV-iI-ebU" customClass="DPWoDeShangHuController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WoDeShangHuController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="VEV-iI-ebU" customClass="WoDeShangHuController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fyZ-Zt-1ke"/>
                         <viewControllerLayoutGuide type="bottom" id="R4C-7c-g1d"/>
@@ -748,7 +749,7 @@
         <!--Yun Tong Ji Controller - 所有菜谱-->
         <scene sceneID="HsJ-Ab-v5X">
             <objects>
-                <viewController storyboardIdentifier="DPYunTongJiController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="810-2g-uM8" userLabel="Yun Tong Ji Controller - 所有菜谱" customClass="DPYunTongJiController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="YunTongJiController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="810-2g-uM8" userLabel="Yun Tong Ji Controller - 所有菜谱" customClass="YunTongJiController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xHV-8N-dl5"/>
                         <viewControllerLayoutGuide type="bottom" id="T3a-eW-Lft"/>
@@ -883,7 +884,7 @@
         <!--Cao Gao Xiang Controller - 草稿箱-->
         <scene sceneID="wJr-92-Fec">
             <objects>
-                <viewController storyboardIdentifier="DPCaoGaoXiangController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QZ5-f3-x0P" userLabel="Cao Gao Xiang Controller - 草稿箱" customClass="DPCaoGaoXiangController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CaoGaoXiangController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QZ5-f3-x0P" userLabel="Cao Gao Xiang Controller - 草稿箱" customClass="CaoGaoXiangController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mV8-bF-hF4"/>
                         <viewControllerLayoutGuide type="bottom" id="gcA-bX-0qn"/>
@@ -977,7 +978,7 @@
         <!--Xiang Xi Xin Xi Controller - 详细信息-->
         <scene sceneID="t3S-2h-1fQ">
             <objects>
-                <viewController storyboardIdentifier="DPXiangXiXinXiController" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="UdS-8O-eu0" userLabel="Xiang Xi Xin Xi Controller - 详细信息" customClass="DPXiangXiXinXiController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="XiangXiXinXiController" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="UdS-8O-eu0" userLabel="Xiang Xi Xin Xi Controller - 详细信息" customClass="XiangXiXinXiController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Kvl-tH-fEv"/>
                         <viewControllerLayoutGuide type="bottom" id="fon-KA-Bcl"/>
@@ -1336,7 +1337,7 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="Bqi-JN-Jvx"/>
-        <segue reference="abo-rZ-1c8"/>
+        <segue reference="zpQ-KS-5yy"/>
         <segue reference="XH8-WH-qbW"/>
     </inferredMetricsTieBreakers>
 </document>

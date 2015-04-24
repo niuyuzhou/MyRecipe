@@ -8,18 +8,18 @@ typedef NS_ENUM(NSUInteger, DataSource) {
 	DataSourceArea = (1UL << 3),
 };
 
-@class DPPickerController;
-@protocol DPPickerControllerDelegate <NSObject>
+@class PickerController;
+@protocol PickerControllerDelegate <NSObject>
 
 @required
-- (void)pickerController:(DPPickerController *)pickerController didSelectField:(NSString *)field;
+- (void)pickerController:(PickerController *)pickerController didSelectField:(NSString *)field;
 
 @end
 
-@interface DPPickerController : NSObject <UIPickerViewDataSource, UIPickerViewDelegate>
+@interface PickerController : NSObject <UIPickerViewDataSource, UIPickerViewDelegate>
 
 @property (nonatomic, assign) DataSource dataSource;
-@property (nonatomic, weak) id<DPPickerControllerDelegate> delegate;
+@property (nonatomic, weak) id<PickerControllerDelegate> delegate;
 @property (nonatomic, strong) NSFetchedResultsController *fetchedResultsController;
 
 - (void)initDataSource;

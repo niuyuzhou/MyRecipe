@@ -1,5 +1,5 @@
 //
-//  DPXiangXiXinXiController.h
+//  XiangXiXinXiController.h
 //  BestCanteen
 //
 //  Created by niuyuzhou on 14-2-16.
@@ -9,9 +9,9 @@
 #import "MyRecipe.h"
 #import "XiangXiXinXiCell.h"
 #import "TianJiaCell.h"
-#import "DPXiangXiXinXiController.h"
-#import "DPTianJiaController.h"
-#import "DPLocalPersistence.h"
+#import "XiangXiXinXiController.h"
+#import "TianJiaController.h"
+#import "LocalPersistence.h"
 #import "MWPhoto.h"
 #import "MWPhotoBrowser.h"
 #import <MobileCoreServices/MobileCoreServices.h>
@@ -22,7 +22,7 @@ typedef NS_ENUM(NSUInteger, ViewMode) {
 	ViewModeServerNoEdit = (1UL << 3),
 };
 
-@interface DPXiangXiXinXiController : UIViewController <
+@interface XiangXiXinXiController : UIViewController <
 NSFetchedResultsControllerDelegate,
 UITableViewDataSource,
 UITabBarDelegate,
@@ -30,7 +30,7 @@ UIActionSheetDelegate,
 UINavigationControllerDelegate,
 UIImagePickerControllerDelegate,
 MWPhotoBrowserDelegate,
-DPTianJiaControllerDelegate
+TianJiaControllerDelegate
 >
 
 @property (nonatomic, assign) ViewMode viewMode;

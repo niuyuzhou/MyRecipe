@@ -1,5 +1,5 @@
 //
-//  DPXiangXiTongJiController.h
+//  XiangXiTongJiController.h
 //  BestCanteen
 //
 //  Created by niuyuzhou on 14-2-24.
@@ -7,7 +7,7 @@
 //
 
 #import "CaoGaoXiangCell.h"
-#import "DPXiangXiXinXiController.h"
+#import "XiangXiXinXiController.h"
 
 @interface DPXiangXiTongJiController : UIViewController <
 	UITableViewDataSource,

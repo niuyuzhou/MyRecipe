@@ -6,7 +6,7 @@
 	//  Copyright (c) 2014年 foodie. All rights reserved.
 	//
 
-#import "DPFenLeiGuanLiController.h"
+#import "FenLeiGuanLiController.h"
 
 @implementation DPFenLeiGuanLiController
 
@@ -16,7 +16,7 @@
 {
     [super viewDidLoad];
 	
-	NSArray *titleArray = [BCConfig sharedConfigInstance].categoryManageMode;
+	NSArray *titleArray = [Config sharedConfigInstance].categoryManageMode;
 	self.navigationItem.title = titleArray[0];
 	self.category = CategoryTag;
     self.fetchedResultsController = [Tag MR_fetchAllSortedBy:@"name"
@@ -126,7 +126,7 @@
 }
 
 - (IBAction)switchCategory:(id)sender {
-	NSArray *titleArray = [BCConfig sharedConfigInstance].categoryManageMode;
+	NSArray *titleArray = [Config sharedConfigInstance].categoryManageMode;
 	UIActionSheet *switchCategoryActionSheet = [[UIActionSheet alloc] initWithTitle:@"请选择查看类别：" delegate:self cancelButtonTitle:nil destructiveButtonTitle:nil otherButtonTitles:nil];
 	
 	for (NSString *title in titleArray) {
@@ -138,7 +138,7 @@
 }
 
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
-	NSArray *titleArray = [BCConfig sharedConfigInstance].categoryManageMode;
+	NSArray *titleArray = [Config sharedConfigInstance].categoryManageMode;
 	
 	switch (buttonIndex) {
 		case 0: {
@@ -216,11 +216,11 @@
 			} else if (success) {
                 switch (self.category) {
                     case CategoryTag:
-                        [[BCConfig sharedConfigInstance].defaultTag addObject:objectToBeAdd];
+                        [[Config sharedConfigInstance].defaultTag addObject:objectToBeAdd];
                         break;
                         
                     case CategoryType:
-                        [[BCConfig sharedConfigInstance].defaultType addObject:objectToBeAdd];
+                        [[Config sharedConfigInstance].defaultType addObject:objectToBeAdd];
                         break;
                         
                     default:

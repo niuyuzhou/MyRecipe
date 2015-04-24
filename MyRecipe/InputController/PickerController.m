@@ -1,7 +1,7 @@
 
-#import "DPPickerController.h"
+#import "PickerController.h"
 
-@implementation DPPickerController
+@implementation PickerController
 
 - (void)initDataSource
 {

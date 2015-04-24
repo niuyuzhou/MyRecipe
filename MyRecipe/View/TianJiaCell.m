@@ -77,14 +77,14 @@
     }
 }
 
-- (void)pickerController:(DPPickerController *)pickerController didSelectField:(NSString *)field {
+- (void)pickerController:(PickerController *)pickerController didSelectField:(NSString *)field {
     if (![field isEqualToString:self.fieldTextField.text]) {
         self.fieldTextField.text = field;
         [[NSNotificationCenter defaultCenter] postNotificationName:UITextFieldTextDidChangeNotification object:nil];
     }
 }
 
-- (void)locationInputController:(DPLocationInputController *)locationInputController didLocatedLocation:(NSString *)locationString {
+- (void)locationInputController:(LocationInputController *)locationInputController didLocatedLocation:(NSString *)locationString {
     if (![locationString isEqualToString:self.fieldTextField.text]) {
         self.fieldTextField.text = locationString;
         [[NSNotificationCenter defaultCenter] postNotificationName:UITextFieldTextDidChangeNotification object:nil];

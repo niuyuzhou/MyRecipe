@@ -6,9 +6,9 @@
 //  Copyright (c) 2014年 foodie. All rights reserved.
 //
 
-#import "DPLocationInputController.h"
+#import "LocationInputController.h"
 
-@implementation DPLocationInputController
+@implementation LocationInputController
 
 - (void)initLocationSetting
 {

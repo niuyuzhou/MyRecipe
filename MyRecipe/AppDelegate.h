@@ -1,5 +1,5 @@
 //
-//  BCAppDelegate.h
+//  AppDelegate.h
 //  BestCanteen
 //
 //  Created by niuyuzhou on 14-2-13.
@@ -9,7 +9,7 @@
 extern NSString *const BCApplicationId;
 extern NSString *const BCClientKey;
 
-@interface BCAppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

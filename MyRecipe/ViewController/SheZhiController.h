@@ -1,5 +1,5 @@
 //
-//  DPSheZhiController.h
+//  SheZhiController.h
 //  BestCanteen
 //
 //  Created by niuyuzhou on 14-2-15.
@@ -8,7 +8,7 @@
 
 #import "SheZhiCell.h"
 
-@interface DPSheZhiController : UIViewController <
+@interface SheZhiController : UIViewController <
 	UITableViewDelegate,
 	UITableViewDataSource
 >

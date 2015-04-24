@@ -6,7 +6,7 @@
 //  Copyright (c) 2014年 foodie. All rights reserved.
 //
 
-#import "DPZhuCeController.h"
+#import "ZhuCeController.h"
 
 @implementation DPZhuCeController
 

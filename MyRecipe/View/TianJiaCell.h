@@ -7,13 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "DPPickerController.h"
-#import "DPLocationInputController.h"
+#import "PickerController.h"
+#import "LocationInputController.h"
 
 @interface TianJiaCell : UITableViewCell <
 UITextFieldDelegate,
-DPPickerControllerDelegate,
-DPLocationInputControllerDelegate
+PickerControllerDelegate,
+LocationInputControllerDelegate
 >
 
 @property (strong, nonatomic) NSString *fieldKey;

@@ -1,23 +1,23 @@
 //
-//  DPSheZhiController.m
+//  SheZhiController.m
 //  BestCanteen
 //
 //  Created by niuyuzhou on 14-2-15.
 //  Copyright (c) 2014年 foodie. All rights reserved.
 //
 
-#import "DPSheZhiController.h"
+#import "SheZhiController.h"
 
-@implementation DPSheZhiController
+@implementation SheZhiController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
-	self.generalSettingField = [BCConfig sharedConfigInstance].generalSettingField;
-	self.accountSettingField = [BCConfig sharedConfigInstance].accountSettingField;
+	self.generalSettingField = [Config sharedConfigInstance].generalSettingField;
+	self.accountSettingField = [Config sharedConfigInstance].accountSettingField;
 	
-	self.settingField = [BCConfig sharedConfigInstance].settingField;
+	self.settingField = [Config sharedConfigInstance].settingField;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView

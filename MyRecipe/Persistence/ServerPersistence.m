@@ -6,17 +6,17 @@
 	//  Copyright (c) 2013年 AVOS. All rights reserved.
 	//
 
-#import "DPServerPersistence.h"
+#import "ServerPersistence.h"
 
-@implementation DPServerPersistence
+@implementation ServerPersistence
 
-+ (DPServerPersistence *)sharedServerPersistenceInstance
++ (ServerPersistence *)sharedServerPersistenceInstance
 {
     static dispatch_once_t  onceToken;
-    static DPServerPersistence * sharedServerPersistenceInstance;
+    static ServerPersistence * sharedServerPersistenceInstance;
 	
     dispatch_once(&onceToken, ^{
-        sharedServerPersistenceInstance = [[DPServerPersistence alloc] init];
+        sharedServerPersistenceInstance = [[ServerPersistence alloc] init];
     });
     return sharedServerPersistenceInstance;
 }
@@ -25,7 +25,7 @@
 - (void)uploadMyRecipeToServer:(MyRecipe *)myRecipe withCompletionBlock:(CompletionBlock)completionBlock andErrorBlock:(ErrorBlock)errorBlock;
 {
 	AVObject *myRecipeToBeUpload = [AVObject objectWithClassName:DPServerTableMyRecipe];
-	NSDictionary *addField = [BCConfig sharedConfigInstance].addField;
+	NSDictionary *addField = [Config sharedConfigInstance].addField;
 	
 	for (int i = 0; i < [addField allValues].count; i ++) {
 		NSMutableDictionary *rowsDictionary = [addField allValues][i];

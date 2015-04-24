@@ -1,15 +1,15 @@
 	//
-	//  DPCaoGaoXiangController.m
+	//  CaoGaoXiangController.m
 	//  BestCanteen
 	//
 	//  Created by niuyuzhou on 14-2-15.
 	//  Copyright (c) 2014年 foodie. All rights reserved.
 	//
 
-#import "DPCaoGaoXiangController.h"
-#import "BCAppDelegate.h"
+#import "CaoGaoXiangController.h"
+#import "AppDelegate.h"
 
-@implementation DPCaoGaoXiangController
+@implementation CaoGaoXiangController
 
 #pragma mark - View lifecycle
 
@@ -81,9 +81,9 @@
 	
 	for (int i = 0; i < allDraftCount; i ++) {
 		MyRecipe *myRecipe = [self.fetchedResultsController objectAtIndexPath:[NSIndexPath indexPathForRow:i inSection:0]];
-		[[DPServerPersistence sharedServerPersistenceInstance] uploadMyRecipeToServer:myRecipe withCompletionBlock:^{
+		[[ServerPersistence sharedServerPersistenceInstance] uploadMyRecipeToServer:myRecipe withCompletionBlock:^{
 			
-			[[DPLocalPersistence sharedLocalPersistenceInstance] deleteObject:myRecipe withCompletionBlock:nil andErrorBlock:nil];
+			[[LocalPersistence sharedLocalPersistenceInstance] deleteObject:myRecipe withCompletionBlock:nil andErrorBlock:nil];
 			
 			[uploadedSuccessfulArray addObject:@"Successful"];
 			if (uploadedSuccessfulArray.count + uploadedFailedArray.count == allDraftCount) {
@@ -237,11 +237,11 @@
         MyRecipe *selectedMyRecipe = (MyRecipe *)[[self fetchedResultsController] objectAtIndexPath:indexPath];
 		
 			// Pass the selected book to the new view controller.
-        DPXiangXiXinXiController *xiangXiXinXiController = (DPXiangXiXinXiController *)[segue destinationViewController];
+        XiangXiXinXiController *xiangXiXinXiController = (XiangXiXinXiController *)[segue destinationViewController];
 		xiangXiXinXiController.viewMode = ViewModeLocal;
         xiangXiXinXiController.myRecipe = selectedMyRecipe;
     } else if ([[segue identifier] isEqualToString:@"AddNewDraft"]) {
-        DPTianJiaController *tianJiaController = (DPTianJiaController *)[segue destinationViewController];
+        TianJiaController *tianJiaController = (TianJiaController *)[segue destinationViewController];
         tianJiaController.isEditMode = NO;
 		tianJiaController.isLocal = YES;
     }

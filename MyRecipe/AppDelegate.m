@@ -1,14 +1,14 @@
 //
-//  BCAppDelegate.m
+//  AppDelegate.m
 //  BestCanteen
 //
 //  Created by niuyuzhou on 14-2-13.
 //  Copyright (c) 2014年 foodie. All rights reserved.
 //
 
-#import "BCAppDelegate.h"
+#import "AppDelegate.h"
 
-@implementation BCAppDelegate
+@implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -16,7 +16,7 @@
     [AVAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
 	[MagicalRecord setupCoreDataStackWithStoreNamed:@"MyRecipe.sqlite"];
 	
-	BCConfig *config = [BCConfig sharedConfigInstance];
+	Config *config = [Config sharedConfigInstance];
 	[config performSelectorOnMainThread:@selector(initConfigData) withObject:nil waitUntilDone:YES];
 	
 	if (config.isFirstRunning) {

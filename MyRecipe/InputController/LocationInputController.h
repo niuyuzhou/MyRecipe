@@ -9,15 +9,15 @@
 #import "NSString+Location.h"
 #import <CoreLocation/CoreLocation.h>
 
-@class DPLocationInputController;
-@protocol DPLocationInputControllerDelegate <NSObject>
+@class LocationInputController;
+@protocol LocationInputControllerDelegate <NSObject>
 
 @required
-- (void)locationInputController:(DPLocationInputController *)locationInputController didLocatedLocation:(NSString *)locationString;
+- (void)locationInputController:(LocationInputController *)locationInputController didLocatedLocation:(NSString *)locationString;
 
 @end
 
-@interface DPLocationInputController : NSObject <
+@interface LocationInputController : NSObject <
 	CLLocationManagerDelegate
 >
 
@@ -27,7 +27,7 @@
 @property (strong, nonatomic) IBOutlet UIView *view;
 @property (strong, nonatomic) IBOutlet UIActivityIndicatorView *currentLocationActivityIndicatorView;
 
-@property (nonatomic, weak) id<DPLocationInputControllerDelegate> delegate;
+@property (nonatomic, weak) id<LocationInputControllerDelegate> delegate;
 
 @property (nonatomic, strong) CLLocationManager *locationManager;
 @property (assign) CLLocationCoordinate2D selectedCoordinate;

@@ -8,9 +8,9 @@
 #import "MyRecipe.h"
 
 
-@interface DPLocalPersistence : NSObject
+@interface LocalPersistence : NSObject
 
-+ (DPLocalPersistence *)sharedLocalPersistenceInstance;
++ (LocalPersistence *)sharedLocalPersistenceInstance;
 
 - (void)deleteObject:(NSManagedObject *)object withCompletionBlock:(CompletionBlock)completionBlock andErrorBlock:(ErrorBlock)errorBlock;
 

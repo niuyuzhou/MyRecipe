@@ -1,5 +1,5 @@
 //
-//  BCConfig.h
+//  Config.h
 //  BestCanteen
 //
 //  Created by niuyuzhou on 14-2-20.
@@ -50,7 +50,7 @@ extern NSString *const DPServerTableMyRecipe;
 extern NSString *const DPServerTableType;
 extern NSString *const DPServerTableTag;
 
-@interface BCConfig : NSObject
+@interface Config : NSObject
 
 #pragma mark - 所有Recipe界面查看方式
 @property (nonatomic, strong) NSMutableArray *analyzeMode;
@@ -100,7 +100,7 @@ extern NSString *const DPServerTableTag;
 @property (nonatomic, strong) NSMutableArray *defaultDirection;
 
 
-+ (BCConfig *)sharedConfigInstance;
++ (Config *)sharedConfigInstance;
 - (void)initConfigData;
 - (void)initDefaultData;
 - (void)initDataBase;
