@@ -101,8 +101,8 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"DPTianJiaCell";
-    DPTianJiaCell *tianJiaCell = [[DPTianJiaCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    static NSString *CellIdentifier = @"TianJiaCell";
+    TianJiaCell *tianJiaCell = [[TianJiaCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     tianJiaCell.selectionStyle = UITableViewCellSelectionStyleNone;
     
     NSMutableDictionary *rowsDictionary = [self.addField allValues][indexPath.section];
@@ -201,7 +201,7 @@
         
         for (int j = 0; j < [rowsDictionary allValues].count; j ++) {
             
-            DPTianJiaCell *tianJiaCell = (DPTianJiaCell *)[self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:j inSection:i]];
+            TianJiaCell *tianJiaCell = (TianJiaCell *)[self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:j inSection:i]];
             NSString *key = [rowsDictionary allKeys][j];
             if (self.isLocal) {
                 [object setValue:tianJiaCell.fieldTextField.text forKey:key];

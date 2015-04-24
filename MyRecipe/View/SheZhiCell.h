@@ -1,12 +1,12 @@
 //
-//  DPSheZhiCell.h
+//  SheZhiCell.h
 //  BestCanteen
 //
 //  Created by niuyuzhou on 14-2-19.
 //  Copyright (c) 2014年 foodie. All rights reserved.
 //
 
-@interface DPSheZhiCell : UITableViewCell
+@interface SheZhiCell : UITableViewCell
 
 @property (strong, nonatomic) NSString *fieldKey;
 @property (strong, nonatomic) IBOutlet UILabel *fieldLabel;

@@ -38,8 +38,8 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-	static NSString *CellIdentifier = @"DPCaoGaoXiangCell";
-	DPCaoGaoXiangCell *caoGaoXiangCell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+	static NSString *CellIdentifier = @"CaoGaoXiangCell";
+	CaoGaoXiangCell *caoGaoXiangCell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
 	
 	[caoGaoXiangCell configureWithShangHuOnServer:self.selectedQueryResult[indexPath.row]];
 	

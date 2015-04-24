@@ -1,14 +1,14 @@
 //
-//  DPTianJiaCell.m
+//  TianJiaCell.m
 //  BestCanteen
 //
 //  Created by niuyuzhou on 14-2-16.
 //  Copyright (c) 2014年 foodie. All rights reserved.
 //
 
-#import "DPXiangXiXinXiCell.h"
+#import "XiangXiXinXiCell.h"
 
-@implementation DPXiangXiXinXiCell
+@implementation XiangXiXinXiCell
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {

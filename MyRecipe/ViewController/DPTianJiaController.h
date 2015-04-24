@@ -9,7 +9,7 @@
 #import "MyRecipe.h"
 #import "Type.h"
 #import "Tag.h"
-#import "DPTianJiaCell.h"
+#import "TianJiaCell.h"
 #import "DPPickerController.h"
 #import "DPLocationInputController.h"
 

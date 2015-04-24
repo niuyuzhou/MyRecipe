@@ -9,7 +9,7 @@
 #import "DPXiangXiXinXiController.h"
 #import "DPTianJiaController.h"
 #import "MyRecipe.h"
-#import "DPCaoGaoXiangCell.h"
+#import "CaoGaoXiangCell.h"
 
 @interface DPCaoGaoXiangController : UIViewController <
 	NSFetchedResultsControllerDelegate,

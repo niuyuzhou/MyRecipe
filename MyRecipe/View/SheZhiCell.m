@@ -1,14 +1,14 @@
 //
-//  DPSheZhiCell.m
+//  SheZhiCell.m
 //  BestCanteen
 //
 //  Created by niuyuzhou on 14-2-19.
 //  Copyright (c) 2014年 foodie. All rights reserved.
 //
 
-#import "DPSheZhiCell.h"
+#import "SheZhiCell.h"
 
-@implementation DPSheZhiCell
+@implementation SheZhiCell
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {

@@ -1,5 +1,5 @@
 //
-//  DPTianJiaCell.h
+//  TianJiaCell.h
 //  BestCanteen
 //
 //  Created by niuyuzhou on 14-2-16.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DPXiangXiXinXiCell : UITableViewCell <
+@interface XiangXiXinXiCell : UITableViewCell <
     UITextFieldDelegate
 >
 

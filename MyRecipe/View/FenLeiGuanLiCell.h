@@ -1,5 +1,5 @@
 //
-//  DPCaoGaoXiangCell.h
+//  CaoGaoXiangCell.h
 //  BestCanteen
 //
 //  Created by niuyuzhou on 14-2-16.

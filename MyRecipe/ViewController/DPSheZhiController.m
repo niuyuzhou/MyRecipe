@@ -38,8 +38,8 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"DPSheZhiCell";
-    DPSheZhiCell *sheZhiCell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    static NSString *CellIdentifier = @"SheZhiCell";
+    SheZhiCell *sheZhiCell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
 	[sheZhiCell resetToDefaultStatus];
     NSMutableDictionary *rowsDictionary = [self.settingField allValues][indexPath.section];
 	

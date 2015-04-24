@@ -60,13 +60,13 @@
 		472DF4BA18BC611600727954 /* DPPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 472DF4B718BC611600727954 /* DPPickerController.m */; };
 		472DF4BE18BC619B00727954 /* DPLocationInputController.m in Sources */ = {isa = PBXBuildFile; fileRef = 472DF4BC18BC619B00727954 /* DPLocationInputController.m */; };
 		4732429918BC91B90049BBD7 /* NSString+Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 4732429818BC91B90049BBD7 /* NSString+Location.m */; };
-		473A57E918B2070100A70AE4 /* DPXiangXiXinXiCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 473A57E718B2070100A70AE4 /* DPXiangXiXinXiCell.m */; };
+		473A57E918B2070100A70AE4 /* XiangXiXinXiCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 473A57E718B2070100A70AE4 /* XiangXiXinXiCell.m */; };
 		474968C518AD117B00EB401F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 474968C418AD117B00EB401F /* main.m */; };
 		474968C918AD117B00EB401F /* BCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 474968C818AD117B00EB401F /* BCAppDelegate.m */; };
 		474968CC18AD117B00EB401F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 474968CA18AD117B00EB401F /* Main.storyboard */; };
-		474D758018B0F978006DC9FB /* DPCaoGaoXiangCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 474D757F18B0F978006DC9FB /* DPCaoGaoXiangCell.m */; };
+		474D758018B0F978006DC9FB /* CaoGaoXiangCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 474D757F18B0F978006DC9FB /* CaoGaoXiangCell.m */; };
 		474D758318B0FDC7006DC9FB /* DPXiangXiXinXiController.m in Sources */ = {isa = PBXBuildFile; fileRef = 474D758218B0FDC7006DC9FB /* DPXiangXiXinXiController.m */; };
-		474D758618B115EA006DC9FB /* DPTianJiaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 474D758518B115EA006DC9FB /* DPTianJiaCell.m */; };
+		474D758618B115EA006DC9FB /* TianJiaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 474D758518B115EA006DC9FB /* TianJiaCell.m */; };
 		477290A618AF3CF200D9326A /* DPDengLuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 477290A518AF3CF200D9326A /* DPDengLuController.m */; };
 		477290B018AF3D8500D9326A /* DPTianJiaController.m in Sources */ = {isa = PBXBuildFile; fileRef = 477290AF18AF3D8500D9326A /* DPTianJiaController.m */; };
 		477290B318AF3D9B00D9326A /* DPSheZhiController.m in Sources */ = {isa = PBXBuildFile; fileRef = 477290B218AF3D9B00D9326A /* DPSheZhiController.m */; };
@@ -79,7 +79,7 @@
 		478B517C18BCA12F00A20246 /* Area.m in Sources */ = {isa = PBXBuildFile; fileRef = 478B517B18BCA12F00A20246 /* Area.m */; };
 		478B517F18BCA12F00A20246 /* Type.m in Sources */ = {isa = PBXBuildFile; fileRef = 478B517E18BCA12F00A20246 /* Type.m */; };
 		47C9290418B4ECA900FBA04E /* DPZhuCeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47C9290318B4ECA900FBA04E /* DPZhuCeController.m */; };
-		47C9290718B5078900FBA04E /* DPSheZhiCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 47C9290618B5078900FBA04E /* DPSheZhiCell.m */; };
+		47C9290718B5078900FBA04E /* SheZhiCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 47C9290618B5078900FBA04E /* SheZhiCell.m */; };
 		47C9290B18B5234700FBA04E /* BCConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 47C9290A18B5234700FBA04E /* BCConfig.m */; };
 		47F7010718AFDFA90000FD71 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 47F7010518AFDFA90000FD71 /* Model.xcdatamodeld */; };
 		869CCEA81AC25DFE001899B2 /* MyRecipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 869CCEA71AC25DFE001899B2 /* MyRecipe.m */; };
@@ -219,8 +219,8 @@
 		472DF4BD18BC619B00727954 /* DPLocationInputController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPLocationInputController.h; sourceTree = "<group>"; };
 		4732429718BC91B90049BBD7 /* NSString+Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Location.h"; sourceTree = "<group>"; };
 		4732429818BC91B90049BBD7 /* NSString+Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Location.m"; sourceTree = "<group>"; };
-		473A57E718B2070100A70AE4 /* DPXiangXiXinXiCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DPXiangXiXinXiCell.m; path = View/DPXiangXiXinXiCell.m; sourceTree = "<group>"; };
-		473A57E818B2070100A70AE4 /* DPXiangXiXinXiCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPXiangXiXinXiCell.h; path = View/DPXiangXiXinXiCell.h; sourceTree = "<group>"; };
+		473A57E718B2070100A70AE4 /* XiangXiXinXiCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XiangXiXinXiCell.m; path = View/XiangXiXinXiCell.m; sourceTree = "<group>"; };
+		473A57E818B2070100A70AE4 /* XiangXiXinXiCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XiangXiXinXiCell.h; path = View/XiangXiXinXiCell.h; sourceTree = "<group>"; };
 		474968B518AD117B00EB401F /* MyRecipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyRecipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		474968C018AD117B00EB401F /* MyRecipe-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyRecipe-Info.plist"; sourceTree = "<group>"; };
 		474968C418AD117B00EB401F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -228,12 +228,12 @@
 		474968C718AD117B00EB401F /* BCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCAppDelegate.h; sourceTree = "<group>"; };
 		474968C818AD117B00EB401F /* BCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCAppDelegate.m; sourceTree = "<group>"; };
 		474968CB18AD117B00EB401F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		474D757E18B0F978006DC9FB /* DPCaoGaoXiangCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPCaoGaoXiangCell.h; path = View/DPCaoGaoXiangCell.h; sourceTree = "<group>"; };
-		474D757F18B0F978006DC9FB /* DPCaoGaoXiangCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DPCaoGaoXiangCell.m; path = View/DPCaoGaoXiangCell.m; sourceTree = "<group>"; };
+		474D757E18B0F978006DC9FB /* CaoGaoXiangCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CaoGaoXiangCell.h; path = View/CaoGaoXiangCell.h; sourceTree = "<group>"; };
+		474D757F18B0F978006DC9FB /* CaoGaoXiangCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CaoGaoXiangCell.m; path = View/CaoGaoXiangCell.m; sourceTree = "<group>"; };
 		474D758118B0FDC7006DC9FB /* DPXiangXiXinXiController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPXiangXiXinXiController.h; path = ViewController/DPXiangXiXinXiController.h; sourceTree = "<group>"; };
 		474D758218B0FDC7006DC9FB /* DPXiangXiXinXiController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DPXiangXiXinXiController.m; path = ViewController/DPXiangXiXinXiController.m; sourceTree = "<group>"; };
-		474D758418B115EA006DC9FB /* DPTianJiaCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPTianJiaCell.h; path = View/DPTianJiaCell.h; sourceTree = "<group>"; };
-		474D758518B115EA006DC9FB /* DPTianJiaCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DPTianJiaCell.m; path = View/DPTianJiaCell.m; sourceTree = "<group>"; };
+		474D758418B115EA006DC9FB /* TianJiaCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TianJiaCell.h; path = View/TianJiaCell.h; sourceTree = "<group>"; };
+		474D758518B115EA006DC9FB /* TianJiaCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TianJiaCell.m; path = View/TianJiaCell.m; sourceTree = "<group>"; };
 		477290A418AF3CF200D9326A /* DPDengLuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPDengLuController.h; path = ViewController/DPDengLuController.h; sourceTree = "<group>"; };
 		477290A518AF3CF200D9326A /* DPDengLuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DPDengLuController.m; path = ViewController/DPDengLuController.m; sourceTree = "<group>"; };
 		477290AE18AF3D8500D9326A /* DPTianJiaController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPTianJiaController.h; path = ViewController/DPTianJiaController.h; sourceTree = "<group>"; };
@@ -258,8 +258,8 @@
 		478B517E18BCA12F00A20246 /* Type.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Type.m; path = ../Entity/Type.m; sourceTree = "<group>"; };
 		47C9290218B4ECA900FBA04E /* DPZhuCeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPZhuCeController.h; path = ViewController/DPZhuCeController.h; sourceTree = "<group>"; };
 		47C9290318B4ECA900FBA04E /* DPZhuCeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DPZhuCeController.m; path = ViewController/DPZhuCeController.m; sourceTree = "<group>"; };
-		47C9290518B5078900FBA04E /* DPSheZhiCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPSheZhiCell.h; path = View/DPSheZhiCell.h; sourceTree = "<group>"; };
-		47C9290618B5078900FBA04E /* DPSheZhiCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DPSheZhiCell.m; path = View/DPSheZhiCell.m; sourceTree = "<group>"; };
+		47C9290518B5078900FBA04E /* SheZhiCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SheZhiCell.h; path = View/SheZhiCell.h; sourceTree = "<group>"; };
+		47C9290618B5078900FBA04E /* SheZhiCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SheZhiCell.m; path = View/SheZhiCell.m; sourceTree = "<group>"; };
 		47C9290918B5234700FBA04E /* BCConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCConfig.h; sourceTree = "<group>"; };
 		47C9290A18B5234700FBA04E /* BCConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCConfig.m; sourceTree = "<group>"; };
 		47F7010618AFDFA90000FD71 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
@@ -675,14 +675,14 @@
 			children = (
 				4709755618B5F6EF0090A400 /* PFenLeiGuanLiCell.m */,
 				4709755718B5F6EF0090A400 /* FenLeiGuanLiCell.h */,
-				473A57E718B2070100A70AE4 /* DPXiangXiXinXiCell.m */,
-				473A57E818B2070100A70AE4 /* DPXiangXiXinXiCell.h */,
-				474D757E18B0F978006DC9FB /* DPCaoGaoXiangCell.h */,
-				474D757F18B0F978006DC9FB /* DPCaoGaoXiangCell.m */,
-				474D758418B115EA006DC9FB /* DPTianJiaCell.h */,
-				474D758518B115EA006DC9FB /* DPTianJiaCell.m */,
-				47C9290518B5078900FBA04E /* DPSheZhiCell.h */,
-				47C9290618B5078900FBA04E /* DPSheZhiCell.m */,
+				473A57E718B2070100A70AE4 /* XiangXiXinXiCell.m */,
+				473A57E818B2070100A70AE4 /* XiangXiXinXiCell.h */,
+				474D757E18B0F978006DC9FB /* CaoGaoXiangCell.h */,
+				474D757F18B0F978006DC9FB /* CaoGaoXiangCell.m */,
+				474D758418B115EA006DC9FB /* TianJiaCell.h */,
+				474D758518B115EA006DC9FB /* TianJiaCell.m */,
+				47C9290518B5078900FBA04E /* SheZhiCell.h */,
+				47C9290618B5078900FBA04E /* SheZhiCell.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -859,7 +859,7 @@
 				47094CEA18BE4C5F00D1FE15 /* MWPhotoBrowser.m in Sources */,
 				4709754618B5EAAD0090A400 /* MagicalRecord+iCloud.m in Sources */,
 				8C6958D81949AFCF00828E2F /* UIButton+WebCache.m in Sources */,
-				474D758018B0F978006DC9FB /* DPCaoGaoXiangCell.m in Sources */,
+				474D758018B0F978006DC9FB /* CaoGaoXiangCell.m in Sources */,
 				8C6958D31949AFCF00828E2F /* SDWebImageDecoder.m in Sources */,
 				4709754A18B5EAAD0090A400 /* MagicalRecord.m in Sources */,
 				8C6958FF1949B11800828E2F /* PSTCollectionViewData.m in Sources */,
@@ -889,7 +889,7 @@
 				4709753918B5EAAD0090A400 /* NSManagedObject+MagicalDataImport.m in Sources */,
 				4709754418B5EAAD0090A400 /* MagicalRecord+Actions.m in Sources */,
 				8C6958D11949AFCF00828E2F /* SDImageCache.m in Sources */,
-				47C9290718B5078900FBA04E /* DPSheZhiCell.m in Sources */,
+				47C9290718B5078900FBA04E /* SheZhiCell.m in Sources */,
 				8C6959011949B11800828E2F /* PSTCollectionViewItemKey.m in Sources */,
 				474968C918AD117B00EB401F /* BCAppDelegate.m in Sources */,
 				472DB9FF18BA6B9400937F80 /* DateUtil.m in Sources */,
@@ -900,7 +900,7 @@
 				471CE72E18B9C1D5009B0F24 /* Reachability.m in Sources */,
 				4709753818B5EAAD0090A400 /* NSManagedObject+MagicalAggregation.m in Sources */,
 				47094CE918BE4C5F00D1FE15 /* MWPhoto.m in Sources */,
-				473A57E918B2070100A70AE4 /* DPXiangXiXinXiCell.m in Sources */,
+				473A57E918B2070100A70AE4 /* XiangXiXinXiCell.m in Sources */,
 				8C6959071949B11800828E2F /* PSTGridLayoutSection.m in Sources */,
 				477290B018AF3D8500D9326A /* DPTianJiaController.m in Sources */,
 				4709754818B5EAAD0090A400 /* MagicalRecord+Setup.m in Sources */,
@@ -923,7 +923,7 @@
 				4709753B18B5EAAD0090A400 /* NSManagedObject+MagicalRecord.m in Sources */,
 				478B517C18BCA12F00A20246 /* Area.m in Sources */,
 				8C6958FB1949B11800828E2F /* NSIndexPath+PSTCollectionViewAdditions.m in Sources */,
-				474D758618B115EA006DC9FB /* DPTianJiaCell.m in Sources */,
+				474D758618B115EA006DC9FB /* TianJiaCell.m in Sources */,
 				8C6958DD1949AFCF00828E2F /* UIImageView+WebCache.m in Sources */,
 				4709754218B5EAAD0090A400 /* NSPersistentStore+MagicalRecord.m in Sources */,
 				8C6958D21949AFCF00828E2F /* SDWebImageCompat.m in Sources */,

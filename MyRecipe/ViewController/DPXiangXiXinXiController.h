@@ -7,8 +7,8 @@
 //
 
 #import "MyRecipe.h"
-#import "DPXiangXiXinXiCell.h"
-#import "DPTianJiaCell.h"
+#import "XiangXiXinXiCell.h"
+#import "TianJiaCell.h"
 #import "DPXiangXiXinXiController.h"
 #import "DPTianJiaController.h"
 #import "DPLocalPersistence.h"

@@ -1,5 +1,5 @@
 //
-//  DPCaoGaoXiangCell.h
+//  CaoGaoXiangCell.h
 //  BestCanteen
 //
 //  Created by niuyuzhou on 14-2-16.
@@ -9,7 +9,7 @@
 #import "MyRecipe.h"
 #import "DateUtil.h"
 
-@interface DPCaoGaoXiangCell : UITableViewCell
+@interface CaoGaoXiangCell : UITableViewCell
 
 @property (strong, nonatomic) IBOutlet UILabel *name;
 @property (strong, nonatomic) IBOutlet UILabel *editTime;

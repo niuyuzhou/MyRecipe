@@ -76,8 +76,8 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"DPXiangXiXinXiCell";
-    DPXiangXiXinXiCell *xiangXiXinXiCell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    static NSString *CellIdentifier = @"XiangXiXinXiCell";
+    XiangXiXinXiCell *xiangXiXinXiCell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     NSMutableDictionary *rowsDictionary = [self.addField allValues][indexPath.section];
 	NSString *keyValues = [rowsDictionary allKeys][indexPath.row];

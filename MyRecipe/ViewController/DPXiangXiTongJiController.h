@@ -6,7 +6,7 @@
 //  Copyright (c) 2014年 foodie. All rights reserved.
 //
 
-#import "DPCaoGaoXiangCell.h"
+#import "CaoGaoXiangCell.h"
 #import "DPXiangXiXinXiController.h"
 
 @interface DPXiangXiTongJiController : UIViewController <

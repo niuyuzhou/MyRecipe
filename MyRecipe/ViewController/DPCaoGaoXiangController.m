@@ -161,8 +161,8 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-	static NSString *CellIdentifier = @"DPCaoGaoXiangCell";
-	DPCaoGaoXiangCell *caoGaoXiangCell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+	static NSString *CellIdentifier = @"CaoGaoXiangCell";
+	CaoGaoXiangCell *caoGaoXiangCell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
 /*
     ShangHu *shangHu = [self.fetchedResultsController objectAtIndexPath:indexPath];
     [caoGaoXiangCell configureWithShangHu:shangHu];
@@ -195,7 +195,7 @@
 		break;
 		
         case NSFetchedResultsChangeUpdate: {
-			DPCaoGaoXiangCell *caoGaoXiangCell = (DPCaoGaoXiangCell *)[tableView cellForRowAtIndexPath:indexPath];
+			CaoGaoXiangCell *caoGaoXiangCell = (CaoGaoXiangCell *)[tableView cellForRowAtIndexPath:indexPath];
 			MyRecipe *myRecipe = [self.fetchedResultsController objectAtIndexPath:indexPath];
 			[caoGaoXiangCell configureWithMyRecipe:myRecipe];
 			break;

@@ -1,5 +1,5 @@
 //
-//  DPTianJiaCell.h
+//  TianJiaCell.h
 //  BestCanteen
 //
 //  Created by niuyuzhou on 14-2-16.
@@ -10,7 +10,7 @@
 #import "DPPickerController.h"
 #import "DPLocationInputController.h"
 
-@interface DPTianJiaCell : UITableViewCell <
+@interface TianJiaCell : UITableViewCell <
 UITextFieldDelegate,
 DPPickerControllerDelegate,
 DPLocationInputControllerDelegate

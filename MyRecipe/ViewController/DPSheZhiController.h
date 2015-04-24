@@ -6,7 +6,7 @@
 //  Copyright (c) 2014年 foodie. All rights reserved.
 //
 
-#import "DPSheZhiCell.h"
+#import "SheZhiCell.h"
 
 @interface DPSheZhiController : UIViewController <
 	UITableViewDelegate,

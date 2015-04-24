@@ -1,5 +1,5 @@
 //
-//  DPCaoGaoXiangCell.m
+//  CaoGaoXiangCell.m
 //  BestCanteen
 //
 //  Created by niuyuzhou on 14-2-16.
