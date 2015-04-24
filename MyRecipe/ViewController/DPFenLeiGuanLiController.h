@@ -8,7 +8,7 @@
 
 #import "Tag.h"
 #import "Type.h"
-#import "DPFenLeiGuanLiCell.h"
+#import "FenLeiGuanLiCell.h"
 
 typedef NS_ENUM(NSUInteger, Category) {
 	CategoryType = (1UL << 1),

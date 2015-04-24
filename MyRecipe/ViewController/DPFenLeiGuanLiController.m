@@ -61,8 +61,8 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-	static NSString *CellIdentifier = @"DPFenLeiGuanLiCell";
-	DPFenLeiGuanLiCell *fenLeiGuanLiCell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+	static NSString *CellIdentifier = @"FenLeiGuanLiCell";
+	FenLeiGuanLiCell *fenLeiGuanLiCell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
 	
     Type *type = [self.fetchedResultsController objectAtIndexPath:indexPath];
     [fenLeiGuanLiCell configureWithType:type];
@@ -92,7 +92,7 @@
 		break;
 		
         case NSFetchedResultsChangeUpdate: {
-			DPFenLeiGuanLiCell *fenLeiGuanLiCell = (DPFenLeiGuanLiCell *)[tableView cellForRowAtIndexPath:indexPath];
+			FenLeiGuanLiCell *fenLeiGuanLiCell = (FenLeiGuanLiCell *)[tableView cellForRowAtIndexPath:indexPath];
 			Type *type = [self.fetchedResultsController objectAtIndexPath:indexPath];
 			[fenLeiGuanLiCell configureWithType:type];
 			break;

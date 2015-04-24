@@ -9,7 +9,7 @@
 #import "Type.h"
 #import "Tag.h"
 
-@interface DPFenLeiGuanLiCell : UITableViewCell
+@interface FenLeiGuanLiCell : UITableViewCell
 
 @property (strong, nonatomic) IBOutlet UILabel *name;
 @property (strong, nonatomic) IBOutlet UILabel *numberOfDraft;

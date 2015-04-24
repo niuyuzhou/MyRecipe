@@ -6,9 +6,9 @@
 //  Copyright (c) 2014年 foodie. All rights reserved.
 //
 
-#import "DPFenLeiGuanLiCell.h"
+#import "FenLeiGuanLiCell.h"
 
-@implementation DPFenLeiGuanLiCell
+@implementation FenLeiGuanLiCell
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {

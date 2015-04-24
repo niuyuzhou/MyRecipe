@@ -50,7 +50,7 @@
 		4709755018B5EB590090A400 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4709754F18B5EB590090A400 /* CoreTelephony.framework */; };
 		4709755218B5EB6B0090A400 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4709755118B5EB6B0090A400 /* CoreLocation.framework */; };
 		4709755518B5F4E90090A400 /* DPFenLeiGuanLiController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4709755418B5F4E90090A400 /* DPFenLeiGuanLiController.m */; };
-		4709755818B5F6EF0090A400 /* DPFenLeiGuanLiCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4709755618B5F6EF0090A400 /* DPFenLeiGuanLiCell.m */; };
+		4709755818B5F6EF0090A400 /* PFenLeiGuanLiCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4709755618B5F6EF0090A400 /* PFenLeiGuanLiCell.m */; };
 		471CE72E18B9C1D5009B0F24 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 471CE72D18B9C1D5009B0F24 /* Reachability.m */; };
 		471CF99218BB3363003180C7 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 471CF98F18BB3363003180C7 /* SVProgressHUD.bundle */; };
 		471CF99318BB3363003180C7 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 471CF99118BB3363003180C7 /* SVProgressHUD.m */; };
@@ -201,8 +201,8 @@
 		4709755118B5EB6B0090A400 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		4709755318B5F4E90090A400 /* DPFenLeiGuanLiController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPFenLeiGuanLiController.h; path = ViewController/DPFenLeiGuanLiController.h; sourceTree = "<group>"; };
 		4709755418B5F4E90090A400 /* DPFenLeiGuanLiController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DPFenLeiGuanLiController.m; path = ViewController/DPFenLeiGuanLiController.m; sourceTree = "<group>"; };
-		4709755618B5F6EF0090A400 /* DPFenLeiGuanLiCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DPFenLeiGuanLiCell.m; path = View/DPFenLeiGuanLiCell.m; sourceTree = "<group>"; };
-		4709755718B5F6EF0090A400 /* DPFenLeiGuanLiCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPFenLeiGuanLiCell.h; path = View/DPFenLeiGuanLiCell.h; sourceTree = "<group>"; };
+		4709755618B5F6EF0090A400 /* PFenLeiGuanLiCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PFenLeiGuanLiCell.m; path = View/PFenLeiGuanLiCell.m; sourceTree = "<group>"; };
+		4709755718B5F6EF0090A400 /* FenLeiGuanLiCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FenLeiGuanLiCell.h; path = View/FenLeiGuanLiCell.h; sourceTree = "<group>"; };
 		471CE72C18B9C1D5009B0F24 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		471CE72D18B9C1D5009B0F24 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		471CF98F18BB3363003180C7 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
@@ -673,8 +673,8 @@
 		474D757D18B0F928006DC9FB /* View */ = {
 			isa = PBXGroup;
 			children = (
-				4709755618B5F6EF0090A400 /* DPFenLeiGuanLiCell.m */,
-				4709755718B5F6EF0090A400 /* DPFenLeiGuanLiCell.h */,
+				4709755618B5F6EF0090A400 /* PFenLeiGuanLiCell.m */,
+				4709755718B5F6EF0090A400 /* FenLeiGuanLiCell.h */,
 				473A57E718B2070100A70AE4 /* DPXiangXiXinXiCell.m */,
 				473A57E818B2070100A70AE4 /* DPXiangXiXinXiCell.h */,
 				474D757E18B0F978006DC9FB /* DPCaoGaoXiangCell.h */,
@@ -801,9 +801,9 @@
 		474968AD18AD117B00EB401F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = MR;
+				CLASSPREFIX = "";
 				LastUpgradeCheck = 0600;
-				ORGANIZATIONNAME = foodie;
+				ORGANIZATIONNAME = YuzhouNiu;
 				TargetAttributes = {
 					474968B418AD117B00EB401F = {
 						DevelopmentTeam = C3KSMFBZ29;
@@ -905,7 +905,7 @@
 				477290B018AF3D8500D9326A /* DPTianJiaController.m in Sources */,
 				4709754818B5EAAD0090A400 /* MagicalRecord+Setup.m in Sources */,
 				47C9290418B4ECA900FBA04E /* DPZhuCeController.m in Sources */,
-				4709755818B5F6EF0090A400 /* DPFenLeiGuanLiCell.m in Sources */,
+				4709755818B5F6EF0090A400 /* PFenLeiGuanLiCell.m in Sources */,
 				4732429918BC91B90049BBD7 /* NSString+Location.m in Sources */,
 				8C6959021949B11800828E2F /* PSTCollectionViewLayout.m in Sources */,
 				4709753C18B5EAAD0090A400 /* NSManagedObject+MagicalRequests.m in Sources */,
