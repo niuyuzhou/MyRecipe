@@ -15,4 +15,8 @@ User Interface
 ![All recipts](https://is1-ssl.mzstatic.com/image/thumb/Purple3/v4/8c/f7/6f/8cf76fc1-3632-431e-04af-8daf22432f12/pr_source.png/500x500bb-80.png)
 ![Setting](https://is1-ssl.mzstatic.com/image/thumb/Purple1/v4/20/a3/a3/20a3a370-3918-2119-09e2-e5245ff20d32/pr_source.png/500x500bb-80.png)
 
+License
+-------
+**Catch-Ingots** is released under [MIT License](http://opensource.org/licenses/MIT)
+
 
