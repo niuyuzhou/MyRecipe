@@ -17,6 +17,6 @@ User Interface
 
 License
 -------
-**Catch-Ingots** is released under [MIT License](http://opensource.org/licenses/MIT)
+**MyRecipt** is released under [MIT License](http://opensource.org/licenses/MIT)
 
 
