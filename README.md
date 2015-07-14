@@ -1,25 +1,22 @@
-## 介绍
-这个示例项目是一个类似大众点评的综合应用，它包含了一个真实的iOS应用所需的大部分功能。
+MyRecipe
+================
 
-## 如何运行
+MyRecipe is a app where you can upload your recipe and share them with your friends.
+MyRecipt is based on a powerful cloud database named LeanCloud which is something like Parse and it has been publised to App Store.
 
-1. 用XCode打开DianPingShangHu.xcodeproj，选择运行的scheme和设备，点击运行按钮或菜单`Product`->`Run`或快捷键`Command(⌘)`+`r`就可以运行此示例
+Download
+--------
+- Apple App Store : https://itunes.apple.com/app/id824136867
+ 
+User Interface
+--------
+![Add recipt](https://is5-ssl.mzstatic.com/image/thumb/Purple5/v4/ba/d9/be/bad9bec6-aae5-7fec-4907-be14bb34315e/pr_source.png/500x500bb-80.png)
+![My recipts](https://is3-ssl.mzstatic.com/image/thumb/Purple1/v4/d3/e8/e2/d3e8e2e7-a907-59ec-045c-8ba713269185/pr_source.png/500x500bb-80.png)
+![All recipts](https://is1-ssl.mzstatic.com/image/thumb/Purple3/v4/8c/f7/6f/8cf76fc1-3632-431e-04af-8daf22432f12/pr_source.png/500x500bb-80.png)
+![Setting](https://is1-ssl.mzstatic.com/image/thumb/Purple1/v4/20/a3/a3/20a3a370-3918-2119-09e2-e5245ff20d32/pr_source.png/500x500bb-80.png)
 
-2. 如果你想获取最新发布的SDK，你也可以使用`cocoapods`,将`Frameworks`目录下的文件删除，然后在终端执行代码:
-
-	    pod install
-
-    不出问题的话 1分钟即可完成所有设置, 并生成名为`DianPingShangHu.xcworkspace`的Xcode工作空间，用Xcode打开它，按第1种介绍的方法运行即可
-
-----
-
-## 使用说明
-
-### 替换 App 信息
-
-示例使用的是公共的 app id 和 app key，您可以在`DPConfig.m`修改成您自己的应用 id 和 key。
+License
+-------
+**MyRecipt** is released under [MIT License](http://opensource.org/licenses/MIT)
 
 
-## 其他
-
-如果您在使用AVOSCloud SDK中, 有自己独特高效的用法, 非常欢迎您fork 并提交pull request, 帮助其他开发者更好的使用SDK. 我们将在本项目的贡献者中, 加入您的名字和联系方式(如果您同意的话)
