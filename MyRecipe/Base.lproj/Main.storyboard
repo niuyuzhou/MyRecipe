@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8YX-ce-x5E">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8YX-ce-x5E">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <scenes>
-        <!--Main Tab Bar Controller - 主界面Tabbar-->
+        <!--Main Tab Bar Controller - Main UI Tabbar-->
         <scene sceneID="Vex-rW-GRa">
             <objects>
-                <tabBarController id="8YX-ce-x5E" userLabel="Main Tab Bar Controller - 主界面Tabbar" sceneMemberID="viewController">
+                <tabBarController id="8YX-ce-x5E" userLabel="Main Tab Bar Controller - Main UI Tabbar" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="mBI-u5-Md6"/>
                     <keyCommands/>
                     <nil key="simulatedBottomBarMetrics"/>
@@ -29,10 +29,10 @@
             </objects>
             <point key="canvasLocation" x="-548" y="190"/>
         </scene>
-        <!--Deng Lu Controller - 登陆-->
+        <!--Deng Lu Controller - Login-->
         <scene sceneID="3FV-z3-pYx">
             <objects>
-                <viewController storyboardIdentifier="DengLuController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="U3n-BB-Bej" userLabel="Deng Lu Controller - 登陆" customClass="DengLuController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DengLuController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="U3n-BB-Bej" userLabel="Deng Lu Controller - Login" customClass="DengLuController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ggt-oy-j9a"/>
                         <viewControllerLayoutGuide type="bottom" id="4Lf-dB-ecN"/>
@@ -44,7 +44,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c7J-1X-io1">
                                 <rect key="frame" x="0.0" y="71" width="320" height="288"/>
                                 <subviews>
-                                    <textField clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入您的用户名" adjustsFontSizeToFit="NO" minimumFontSize="15" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="CFj-pb-YjE">
+                                    <textField clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="input user name" adjustsFontSizeToFit="NO" minimumFontSize="15" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="CFj-pb-YjE">
                                         <rect key="frame" x="95" y="37" width="205" height="30"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="15"/>
@@ -53,7 +53,7 @@
                                             <outlet property="delegate" destination="U3n-BB-Bej" id="RMm-RM-UU0"/>
                                         </connections>
                                     </textField>
-                                    <textField clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入您的密码" clearsOnBeginEditing="YES" adjustsFontSizeToFit="NO" minimumFontSize="15" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="jWW-KQ-IoZ">
+                                    <textField clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="input your password" clearsOnBeginEditing="YES" adjustsFontSizeToFit="NO" minimumFontSize="15" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="jWW-KQ-IoZ">
                                         <rect key="frame" x="95" y="88" width="205" height="30"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="15"/>
@@ -62,7 +62,7 @@
                                             <outlet property="delegate" destination="U3n-BB-Bej" id="3Sv-SU-GLc"/>
                                         </connections>
                                     </textField>
-                                    <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="密      码：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLm-vD-25x">
+                                    <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Password：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLm-vD-25x">
                                         <rect key="frame" x="20" y="92" width="84" height="21"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -72,7 +72,7 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="用 户 名：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SUg-nC-vI0">
+                                    <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Name：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SUg-nC-vI0">
                                         <rect key="frame" x="20" y="43" width="84" height="21"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -86,7 +86,7 @@
                                         <rect key="frame" x="171" y="137" width="129" height="44"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="17"/>
-                                        <state key="normal" title="立即注册">
+                                        <state key="normal" title="Register">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
@@ -101,18 +101,18 @@
                                             <constraint firstAttribute="height" constant="44" id="pcx-tN-REg"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="17"/>
-                                        <state key="normal" title="立即登录">
+                                        <state key="normal" title="Login">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
                                             <action selector="login:" destination="U3n-BB-Bej" eventType="touchUpInside" id="9Qo-XU-i8b"/>
                                         </connections>
                                     </button>
-                                    <button hidden="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3oM-Xd-OE6">
+                                    <button hidden="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3oM-Xd-OE6">
                                         <rect key="frame" x="92" y="92" width="136" height="27"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="17"/>
-                                        <state key="normal" title="立即发送验证邮件">
+                                        <state key="normal" title="send verify mail">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
@@ -154,13 +154,13 @@
                             <constraint firstItem="4Lf-dB-ecN" firstAttribute="top" secondItem="c7J-1X-io1" secondAttribute="bottom" constant="209" id="omt-XY-wMC"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="登录" id="98l-5I-yJv">
-                        <barButtonItem key="leftBarButtonItem" title="忘记密码" style="plain" id="O8G-IF-iO5">
+                    <navigationItem key="navigationItem" title="Login" id="98l-5I-yJv">
+                        <barButtonItem key="leftBarButtonItem" title="Forget pwd" style="plain" id="O8G-IF-iO5">
                             <connections>
                                 <action selector="forgetPassword:" destination="U3n-BB-Bej" id="b0v-d0-q1e"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="取消" style="plain" id="9xH-co-jWQ">
+                        <barButtonItem key="rightBarButtonItem" title="Cancel" style="plain" id="9xH-co-jWQ">
                             <connections>
                                 <action selector="cancel:" destination="U3n-BB-Bej" id="QJz-7i-eBz"/>
                             </connections>
@@ -215,7 +215,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P2V-mT-faN">
                                 <rect key="frame" x="0.0" y="88" width="320" height="239"/>
                                 <subviews>
-                                    <textField clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入您的用户名" adjustsFontSizeToFit="NO" minimumFontSize="15" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="X78-UU-yf3">
+                                    <textField clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="input user name" adjustsFontSizeToFit="NO" minimumFontSize="15" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="X78-UU-yf3">
                                         <rect key="frame" x="95" y="20" width="205" height="30"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="15"/>
@@ -224,7 +224,7 @@
                                             <outlet property="delegate" destination="4cK-9H-MOc" id="4b9-zD-RcF"/>
                                         </connections>
                                     </textField>
-                                    <textField clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入您的密码" clearsOnBeginEditing="YES" adjustsFontSizeToFit="NO" minimumFontSize="15" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="fFt-hN-1i9">
+                                    <textField clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="input your password" clearsOnBeginEditing="YES" adjustsFontSizeToFit="NO" minimumFontSize="15" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="fFt-hN-1i9">
                                         <rect key="frame" x="95" y="70" width="205" height="30"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="15"/>
@@ -233,7 +233,7 @@
                                             <outlet property="delegate" destination="4cK-9H-MOc" id="Fqj-jF-yQI"/>
                                         </connections>
                                     </textField>
-                                    <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="密      码：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lim-z3-dsm">
+                                    <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Password：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lim-z3-dsm">
                                         <rect key="frame" x="20" y="74" width="84" height="21"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -243,7 +243,7 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="用 户 名：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6b3-tq-HEw">
+                                    <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Name：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6b3-tq-HEw">
                                         <rect key="frame" x="20" y="24" width="84" height="21"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -254,7 +254,7 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入您的电子邮箱" adjustsFontSizeToFit="NO" minimumFontSize="15" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="RnV-wQ-3i4">
+                                    <textField clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="input your email" adjustsFontSizeToFit="NO" minimumFontSize="15" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="RnV-wQ-3i4">
                                         <rect key="frame" x="95" y="121" width="205" height="30"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="15"/>
@@ -263,7 +263,7 @@
                                             <outlet property="delegate" destination="4cK-9H-MOc" id="2Un-gZ-Pxn"/>
                                         </connections>
                                     </textField>
-                                    <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="电子邮箱：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vaA-JP-Je8">
+                                    <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Email：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vaA-JP-Je8">
                                         <rect key="frame" x="20" y="125" width="84" height="21"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -273,15 +273,15 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R0l-8S-2hv">
-                                        <rect key="frame" x="137" y="189" width="46" height="30"/>
+                                    <button contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R0l-8S-2hv">
+                                        <rect key="frame" x="106" y="183" width="108" height="30"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="46" id="Ob2-q7-qQo"/>
                                             <constraint firstAttribute="height" constant="30" id="PiQ-Uf-lei"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="17"/>
-                                        <state key="normal" title="注册">
+                                        <state key="normal" title="Register">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
@@ -321,8 +321,8 @@
                             <constraint firstItem="P2V-mT-faN" firstAttribute="top" secondItem="xcY-pf-OMP" secondAttribute="bottom" constant="24" id="zEh-by-aV7"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="注册" id="Zk9-Bp-LhG">
-                        <barButtonItem key="rightBarButtonItem" title="取消" style="plain" id="wUh-uE-lfg">
+                    <navigationItem key="navigationItem" title="Register" id="Zk9-Bp-LhG">
+                        <barButtonItem key="rightBarButtonItem" title="Cancel" style="plain" id="wUh-uE-lfg">
                             <connections>
                                 <action selector="cancel:" destination="4cK-9H-MOc" id="9pw-Xp-CJj"/>
                             </connections>
@@ -338,11 +338,11 @@
             </objects>
             <point key="canvasLocation" x="1697" y="854"/>
         </scene>
-        <!--设定-->
+        <!--Setting-->
         <scene sceneID="OQA-DV-CYx">
             <objects>
                 <navigationController definesPresentationContext="YES" id="pzQ-MT-KSN" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="设定" image="tabSetting" id="LAd-Bd-HQh"/>
+                    <tabBarItem key="tabBarItem" title="Setting" image="tabSetting" id="LAd-Bd-HQh"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="wHN-YX-H8p">
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
@@ -455,7 +455,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="设定" image="tabSetting" id="Bdu-1X-aX8"/>
-                    <navigationItem key="navigationItem" title="设定" id="XVg-fA-ppX"/>
+                    <navigationItem key="navigationItem" title="Setting" id="XVg-fA-ppX"/>
                     <connections>
                         <outlet property="settingTableView" destination="JjK-cL-Mjf" id="ad2-iJ-VQ1"/>
                         <segue destination="Mtc-jc-IWy" kind="modal" identifier="ShowFenLeiGuanLi" id="ERL-SI-7aE"/>
@@ -465,7 +465,7 @@
             </objects>
             <point key="canvasLocation" x="275" y="854"/>
         </scene>
-        <!--添加-->
+        <!--Add new recipe-->
         <scene sceneID="WRN-fG-nDL">
             <objects>
                 <tableViewController hidesBottomBarWhenPushed="YES" id="qeq-ct-2oV" customClass="TianJiaController" sceneMemberID="viewController">
@@ -509,8 +509,8 @@
                         </connections>
                     </tableView>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="添加" id="Uh9-e8-htk">
-                        <barButtonItem key="leftBarButtonItem" title="返回" style="plain" id="RC5-UE-kBs">
+                    <navigationItem key="navigationItem" title="Add new recipe" id="Uh9-e8-htk">
+                        <barButtonItem key="leftBarButtonItem" title="Return" style="plain" id="RC5-UE-kBs">
                             <connections>
                                 <action selector="checkIsNeedToBeSaveBeforeBack:" destination="qeq-ct-2oV" id="kJp-oe-mRA"/>
                             </connections>
@@ -617,11 +617,11 @@
             </objects>
             <point key="canvasLocation" x="938" y="-402"/>
         </scene>
-        <!--我的菜谱-->
+        <!--My recipes-->
         <scene sceneID="2sL-1p-aSo">
             <objects>
                 <navigationController definesPresentationContext="YES" id="Ci6-WE-UPd" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="我的菜谱" image="tabBusinesser" id="aZ9-x0-arC"/>
+                    <tabBarItem key="tabBarItem" title="My recipes" image="tabBusinesser" id="aZ9-x0-arC"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="pDM-DE-e8T">
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
@@ -636,7 +636,7 @@
             </objects>
             <point key="canvasLocation" x="-76" y="190"/>
         </scene>
-        <!--我的菜谱-->
+        <!--My recipes-->
         <scene sceneID="uTH-Lk-vZz">
             <objects>
                 <viewController storyboardIdentifier="WoDeShangHuController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="VEV-iI-ebU" customClass="WoDeShangHuController" sceneMemberID="viewController">
@@ -711,9 +711,9 @@
                             <constraint firstItem="6c0-fK-fKj" firstAttribute="top" secondItem="AMN-0d-zFK" secondAttribute="top" id="sW7-gE-UVr"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="我的菜谱" image="tabBusinesser" id="b7t-GG-pxA"/>
-                    <navigationItem key="navigationItem" title="我的菜谱" id="iqO-1J-oWb">
-                        <barButtonItem key="leftBarButtonItem" title="刷新" style="plain" id="rgT-eA-eGX">
+                    <tabBarItem key="tabBarItem" title="My Recipes" image="tabBusinesser" id="b7t-GG-pxA"/>
+                    <navigationItem key="navigationItem" title="My recipes" id="iqO-1J-oWb">
+                        <barButtonItem key="leftBarButtonItem" title="Refresh" style="plain" id="rgT-eA-eGX">
                             <connections>
                                 <action selector="refreshMyShangHu:" destination="VEV-iI-ebU" id="QUK-BT-reV"/>
                             </connections>
@@ -821,13 +821,13 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="所有菜谱" image="tabCloudData" id="bLb-iK-JZv"/>
-                    <navigationItem key="navigationItem" title="所有菜谱" id="Zjb-YR-0dW">
-                        <barButtonItem key="leftBarButtonItem" title="刷新" style="plain" id="cb5-tp-h7H">
+                    <navigationItem key="navigationItem" title="All recipes" id="Zjb-YR-0dW">
+                        <barButtonItem key="leftBarButtonItem" title="Refresh" style="plain" id="cb5-tp-h7H">
                             <connections>
                                 <action selector="refreshallUsersShangHus:" destination="810-2g-uM8" id="ZAL-na-PKT"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="分组" style="plain" id="ddY-Mu-4sq">
+                        <barButtonItem key="rightBarButtonItem" title="Group" style="plain" id="ddY-Mu-4sq">
                             <connections>
                                 <action selector="switchCategory:" destination="810-2g-uM8" id="hcy-iH-HWJ"/>
                             </connections>
@@ -843,11 +843,11 @@
             </objects>
             <point key="canvasLocation" x="275" y="1500"/>
         </scene>
-        <!--所有菜谱-->
+        <!--All recipes-->
         <scene sceneID="i8O-MA-4nC">
             <objects>
                 <navigationController definesPresentationContext="YES" id="RhB-xT-btd" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="所有菜谱" image="tabCloudData" id="9AL-K6-dzy"/>
+                    <tabBarItem key="tabBarItem" title="All recipes" image="tabCloudData" id="9AL-K6-dzy"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="y9B-Ls-uJw">
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
@@ -862,11 +862,11 @@
             </objects>
             <point key="canvasLocation" x="-76" y="1500"/>
         </scene>
-        <!--草稿箱-->
+        <!--Draft-->
         <scene sceneID="CBZ-Zu-Lym">
             <objects>
                 <navigationController definesPresentationContext="YES" id="lu5-ka-R0M" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="草稿箱" image="tabSketch" id="JsX-AS-Vw4"/>
+                    <tabBarItem key="tabBarItem" title="Draft" image="tabSketch" id="JsX-AS-Vw4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="U2a-s1-efi">
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
@@ -881,10 +881,10 @@
             </objects>
             <point key="canvasLocation" x="-76" y="-460"/>
         </scene>
-        <!--Cao Gao Xiang Controller - 草稿箱-->
+        <!--Cao Gao Xiang Controller - Draft-->
         <scene sceneID="wJr-92-Fec">
             <objects>
-                <viewController storyboardIdentifier="CaoGaoXiangController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QZ5-f3-x0P" userLabel="Cao Gao Xiang Controller - 草稿箱" customClass="CaoGaoXiangController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CaoGaoXiangController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QZ5-f3-x0P" userLabel="Cao Gao Xiang Controller - Draft" customClass="CaoGaoXiangController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mV8-bF-hF4"/>
                         <viewControllerLayoutGuide type="bottom" id="gcA-bX-0qn"/>
@@ -957,9 +957,9 @@
                     <tabBarItem key="tabBarItem" title="草稿箱" image="tabSketch" id="3sW-29-uK5">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="-4" vertical="0.0"/>
                     </tabBarItem>
-                    <navigationItem key="navigationItem" title="草稿箱" id="jEq-KU-e3k">
-                        <barButtonItem key="leftBarButtonItem" title="添加" style="plain" id="ctY-Ju-t8G"/>
-                        <barButtonItem key="rightBarButtonItem" title="编辑" style="plain" id="4jB-Pq-gC4">
+                    <navigationItem key="navigationItem" title="Draft" id="jEq-KU-e3k">
+                        <barButtonItem key="leftBarButtonItem" title="Add" style="plain" id="ctY-Ju-t8G"/>
+                        <barButtonItem key="rightBarButtonItem" title="Edit" style="plain" id="4jB-Pq-gC4">
                             <connections>
                                 <action selector="editDraft:" destination="QZ5-f3-x0P" id="ERs-mE-THb"/>
                             </connections>
@@ -1077,8 +1077,8 @@
                             <constraint firstItem="Edw-XD-c7l" firstAttribute="leading" secondItem="o31-x6-Kq5" secondAttribute="leading" id="lvA-u4-Sw0"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="详细信息" id="awL-LW-nU3">
-                        <barButtonItem key="rightBarButtonItem" title="编辑" style="plain" id="kG1-FH-Poq">
+                    <navigationItem key="navigationItem" title="Detail information" id="awL-LW-nU3">
+                        <barButtonItem key="rightBarButtonItem" title="Edit" style="plain" id="kG1-FH-Poq">
                             <connections>
                                 <action selector="editInformation:" destination="UdS-8O-eu0" id="IiK-U6-Pez"/>
                             </connections>
@@ -1216,13 +1216,13 @@
                     <tabBarItem key="tabBarItem" title="草稿箱" image="tabSketch" id="5DB-m1-5tV">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="-4" vertical="0.0"/>
                     </tabBarItem>
-                    <navigationItem key="navigationItem" title="分类管理" id="z67-0N-MT1">
-                        <barButtonItem key="leftBarButtonItem" title="取消" style="plain" id="1mB-0c-Klq">
+                    <navigationItem key="navigationItem" title="Classify manage" id="z67-0N-MT1">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" style="plain" id="1mB-0c-Klq">
                             <connections>
                                 <action selector="cancel:" destination="nbY-mh-IOH" id="AK4-4p-XmU"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="编辑" style="plain" id="DVh-lH-TN1">
+                        <barButtonItem key="rightBarButtonItem" title="Edit" style="plain" id="DVh-lH-TN1">
                             <connections>
                                 <action selector="enterEditMode:" destination="nbY-mh-IOH" id="qrf-Sf-s1S"/>
                             </connections>
@@ -1238,7 +1238,7 @@
             </objects>
             <point key="canvasLocation" x="610" y="854"/>
         </scene>
-        <!--详细统计-->
+        <!--Statistics-->
         <scene sceneID="LGP-Ug-nqP">
             <objects>
                 <viewController storyboardIdentifier="DPXiangXiTongJiController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="N4a-52-9a3" customClass="DPXiangXiTongJiController" sceneMemberID="viewController">
@@ -1313,7 +1313,7 @@
                             <constraint firstItem="vEV-SH-86R" firstAttribute="leading" secondItem="qjS-ef-mcb" secondAttribute="leading" id="w7O-iS-eGS"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="详细统计" id="2bc-IZ-I5K"/>
+                    <navigationItem key="navigationItem" title="Statistics" id="2bc-IZ-I5K"/>
                     <connections>
                         <outlet property="tableView" destination="vEV-SH-86R" id="EXS-Kl-J3u"/>
                     </connections>
@@ -1336,8 +1336,8 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="rEx-sd-0IC"/>
+        <segue reference="ryj-cU-CF6"/>
         <segue reference="Bqi-JN-Jvx"/>
-        <segue reference="zpQ-KS-5yy"/>
-        <segue reference="XH8-WH-qbW"/>
     </inferredMetricsTieBreakers>
 </document>
