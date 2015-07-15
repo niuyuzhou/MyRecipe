@@ -290,29 +290,25 @@ NSString *const DPServerTableTag = @"Tag";
 }
 
 - (void)initSettingConfigData {
-/*
-    self.generalSettingField = [NSMutableDictionary dictionaryWithDictionary:@{@"categoryManage" : @"类别管理",
-																			   @"clearCache" : @"清除缓存"}];
-*/
-    self.generalSettingField = [NSMutableDictionary dictionaryWithDictionary:@{@"clearCache" : @"清除缓存"}];
+    self.generalSettingField = [NSMutableDictionary dictionaryWithDictionary:@{@"clearCache" : @"Clear cache"}];
 
-	self.accountSettingField = [NSMutableDictionary dictionaryWithDictionary:@{@"logInLogOut" : @"登录"}];
+	self.accountSettingField = [NSMutableDictionary dictionaryWithDictionary:@{@"logInLogOut" : @"Login"}];
 	
-	self.settingField = [NSMutableDictionary dictionaryWithDictionary:@{@"常用工具" : self.generalSettingField, @"我的账户" : self.accountSettingField}];
+	self.settingField = [NSMutableDictionary dictionaryWithDictionary:@{@"Common tools" : self.generalSettingField, @"My account" : self.accountSettingField}];
 }
 
 - (void)initAddConfigData {
     self.generalAddField = [NSMutableDictionary dictionaryWithDictionary:@{
-                                                                           @"name" : @"名字",
-                                                                           @"ingredient" : @"原料",
-                                                                           @"direction" : @"制作方法"}];
+                                                                           @"name" : @"Name",
+                                                                           @"ingredient" : @"Ingredient",
+                                                                           @"direction" : @"Direction"}];
     self.optionalAddField = [NSMutableDictionary dictionaryWithDictionary:@{
-                                                                            @"tag" : @"口味",
-																			@"type" : @"菜式",
-                                                                            @"area" : @"菜系"}];
+                                                                            @"tag" : @"Tag",
+																			@"type" : @"Type",
+                                                                            @"area" : @"Area"}];
 	self.addField = [NSMutableDictionary dictionaryWithDictionary:@{
-																	@"基本信息" : self.generalAddField,
-																	@"可选信息" : self.optionalAddField}];}
+																	@"Basic" : self.generalAddField,
+																	@"Optional" : self.optionalAddField}];}
 
 
 - (void)initDefaultData {
@@ -364,8 +360,10 @@ NSString *const DPServerTableTag = @"Tag";
 // Cooking Method
 - (void) initDefaultDirectionData {
     self.defaultDirection = [NSMutableArray array];
-    NSArray *directionItems = [NSMutableArray arrayWithArray:@[@"炒", @"拌", @"煎", @"炖", @"蒸", @"煮" ,@"炸", @"红烧", @"焖", @"煲", @"烩", @"烤", @"卤", @"腌"]];
+    //NSArray *directionItems = [NSMutableArray arrayWithArray:@[@"炒", @"拌", @"煎", @"炖", @"蒸", @"煮" ,@"炸", @"红烧", @"焖", @"煲", @"烩", @"烤", @"卤", @"腌"]];
 
+    NSArray *directionItems = [NSMutableArray arrayWithArray:@[@"deep fry", @"mix", @"braise", @"brew", @"ferment", @"simmer" ,@"saute", @"ferment", @"steam", @"bake", @"brew", @"barbecue", @"smoke", @"salt"]];
+    
     for (NSString *directionName in directionItems) {
         [self.defaultDirection addObject:directionName];
     }
@@ -373,8 +371,8 @@ NSString *const DPServerTableTag = @"Tag";
 // 菜系
 - (void)initDefaultAreaConfigData {
 	self.defaultArea = [NSMutableArray array];
-    NSArray *areaItems = [NSMutableArray arrayWithArray:@[@"本帮江浙菜", @"川菜", @"粤菜", @"湘菜", @"东北菜", @"贵州菜", @"台湾菜", @"清真菜", @"新疆菜", @"西北菜", @"素菜", @"烧烤", @"火锅", @"日本料理", @"韩国料理", @"东南亚菜", @"西餐", @"面包", @"其他"]];
-    
+    //NSArray *areaItems = [NSMutableArray arrayWithArray:@[@"本帮江浙菜", @"川菜", @"粤菜", @"湘菜", @"东北菜", @"贵州菜", @"台湾菜", @"清真菜", @"新疆菜", @"西北菜", @"素菜", @"烧烤", @"火锅", @"日本料理", @"韩国料理", @"东南亚菜", @"西餐", @"面包", @"其他"]];
+    NSArray *areaItems = [NSMutableArray arrayWithArray:@[@"Shandong Cuisine", @"Sichuan Cuisine", @"Guangdong Cuisine", @"Fujian Cuisine", @"Jiangsu Cuisine", @"Zhejiang Cuisine", @"Hunan Cuisine", @"Anhui Cuisine", @"Others"]];
     
 	NSManagedObjectContext *localContext = [NSManagedObjectContext MR_contextForCurrentThread];
 	

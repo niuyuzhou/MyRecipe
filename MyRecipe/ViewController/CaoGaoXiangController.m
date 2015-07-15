@@ -17,7 +17,7 @@
 {
     [super viewDidLoad];
 	
-	[self.navigationItem.leftBarButtonItem setTitle:@"添加"];
+	[self.navigationItem.leftBarButtonItem setTitle:@"Add"];
 	[self.navigationItem.leftBarButtonItem setTarget:self];
 	[self.navigationItem.leftBarButtonItem setAction:@selector(AddNewDraft)];
 
@@ -44,14 +44,14 @@
     // 根据draftTableView状态（是否可Edit），设定navigationItem BarButtonItem状态
     if(self.draftTableView.editing) {
         [self.draftTableView setEditing:NO animated:YES];
-        [self.navigationItem.rightBarButtonItem setTitle:@"编辑"];
-		[self.navigationItem.leftBarButtonItem setTitle:@"添加"];
+        [self.navigationItem.rightBarButtonItem setTitle:@"Edit"];
+		[self.navigationItem.leftBarButtonItem setTitle:@"Add"];
 		[self.navigationItem.leftBarButtonItem setTarget:self];
 		[self.navigationItem.leftBarButtonItem setAction:@selector(AddNewDraft)];
 	} else {
 		[self.draftTableView setEditing:YES animated:YES]; // 设定Table为可以Delete状态
-		[self.navigationItem.rightBarButtonItem setTitle:@"完成"];
-		[self.navigationItem.leftBarButtonItem setTitle:@"上传"];
+		[self.navigationItem.rightBarButtonItem setTitle:@"Finish"];
+		[self.navigationItem.leftBarButtonItem setTitle:@"Upload"];
 		[self.navigationItem.leftBarButtonItem setTarget:self];
 		[self.navigationItem.leftBarButtonItem setAction:@selector(uploadAllDraft)];
 	}

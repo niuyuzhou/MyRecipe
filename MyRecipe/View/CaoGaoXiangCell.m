@@ -53,13 +53,13 @@
 - (void)configureWithUsernameOnServer:(NSString *)username andFeedsCount:(NSInteger)count
 {
 	self.name.text = username;
-	self.editTime.text = [NSString stringWithFormat:@"%d个贡献", count];
+	self.editTime.text = [NSString stringWithFormat:@"%d recipes", count];
 }
 
 - (void)configureWithCategoryNameOnServer:(NSString *)categoryName andFeedsCount:(NSInteger)count
 {
 	self.name.text = categoryName;
-	self.editTime.text = [NSString stringWithFormat:@"%d条信息", count];
+	self.editTime.text = [NSString stringWithFormat:@"%d informations", count];
 }
 
 @end

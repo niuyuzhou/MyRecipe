@@ -39,9 +39,9 @@
     [self.areaPickerController initDataSource];
     
     if (self.isEditMode) {
-        self.navigationItem.title = @"编辑";
+        self.navigationItem.title = @"Edit";
     } else {
-        self.navigationItem.title = @"添加";
+        self.navigationItem.title = @"Add";
     }
     
     self.isNeedToBeSave = NO;
